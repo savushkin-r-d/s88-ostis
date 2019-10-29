@@ -1,0 +1,12 @@
+s_sd_of_pfc_texts 
+=> nrel_main_idtf:
+	[Раздел. Предметная область текстов языка PFC]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел базы знаний, описывающий Предметную область текстов языка PFC]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;;
+s_sd_of_pfc_texts = [*^"file://s_sd_of_pfc_texts.scsi"*];;
+
+rrel_key_sc_element -> (s_sd_of_pfc_texts -> sd_of_pfc_texts);;

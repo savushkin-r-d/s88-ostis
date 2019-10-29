@@ -1,0 +1,135 @@
+subject_domain_isa88_process
+=> nrel_main_idtf: [Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
+-> rrel_maximum_studied_object_class:
+process_element;
+-> rrel_not_maximum_studied_object_class:
+process_stage; process_operation; process_action;
+-> rrel_explored_relation:
+nrel_process_element_link;;
+
+process_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[элемент процесса]
+	(* <- lang_ru;; *);
+	[process element]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_element_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_element_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+=> nrel_inclusion: process_stage; process_operation; process_action;;
+
+process_stage
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[стадия процесса]
+	(* <- lang_ru;; *);
+	[process stage]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_stage_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_stage_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_operation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[операция процесса]
+(* <- lang_ru;; *);
+[process operation]
+(* <- lang_en;; *);
+<- rrel_key_sc_element:
+...
+(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			"file://content_html/explanation_for_process_operation_ru.html"
+		(* <- lang_ru;;	*);
+			"file://content_html/explanation_for_process_operation_en.html"
+		(* <- lang_en;; *);;
+	*);;
+*);;
+
+process_action
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие процесса]
+	(* <- lang_ru;; *);
+	[process action]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_action_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_action_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_process_action_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_process_action_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+nrel_process_element_link
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[связь элементов процесса*]
+	(* <- lang_ru;; *);
+	[process element link*]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_nrel_process_element_link_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_nrel_process_element_link_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: process_element;;
