@@ -1,0 +1,877 @@
+
+common_resource
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[общий ресурс]
+	(* <- lang_ru;; *);
+	[common resource]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	exclusive_use_resource;
+	shared_use_resource;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_common_resource_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_common_resource_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_common_resource_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_common_resource_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+exclusive_use_resource
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[исключительно используемый ресурс]
+	(* <- lang_ru;; *);
+	[exclusive-use resource]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_exclusive_use_resource_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_exclusive_use_resource_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+shared_use_resource
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[совместно используемый ресурс]
+	(* <- lang_ru;; *);
+	[shared-use resource]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_shared_use_resource_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_shared_use_resource_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+recipe_entity
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[рецептурный объект]
+	(* <- lang_ru;; *);
+	[recipe entity]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	recipe;
+	general_recipe;
+	site_recipe;
+	master_recipe;
+	control_recipe;
+	//recipe_component;
+	//recipe_building_block;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_recipe_entity_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_recipe_entity_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+recipe
+<- sc_node_not_relation;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_recipe_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+general_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[общий рецепт]
+	(* <- lang_ru;; *);
+	[general recipe]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_general_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_general_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+site_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[местный рецепт]
+	(* <- lang_ru;; *);
+	[site recipe]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_site_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_site_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_site_recipe_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_site_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+master_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[главный рецепт]
+	(* <- lang_ru;; *);
+	[master recipe]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_master_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_master_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+control_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[управляющий рецепт]
+	(* <- lang_ru;; *);
+	[control recipe]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_control_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_control_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+unit_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[установочный рецепт]
+	(* <- lang_ru;; *);
+	[unit recipe]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_unit_recipe_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_unit_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_unit_recipe_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_unit_recipe_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+formula
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[рецептурная формула]
+	(* <- lang_ru;; *);
+	[formula]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_formula_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_formula_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+header
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[заголовок рецепта]
+	(* <- lang_ru;; *);
+	[header]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_header_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_header_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+nrel_recipe_procedure
+<- sc_node_norole_relation;
+=> nrel_idtf:
+	[технология рецепта*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[процедура рецепта*]
+	(* <- lang_ru;; *);
+	[recipe procedure*]
+	(* <- lang_en;; *);;
+
+line
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[линия]
+	(* <- lang_ru;; *);
+	[line]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[train]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_line_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_line_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+procedure
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[технология]
+	(* <- lang_ru;; *);
+	[procedure]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_procedure_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_procedure_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_procedure_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_procedure_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+batch
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[партия]
+	(* <- lang_ru;; *);
+	[batch]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_batch_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_batch_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_batch_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_batch_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[производственный процесс]
+	(* <- lang_ru;; *);
+	[process]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_input
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[вход процесса]
+	(* <- lang_ru;; *);
+	[process input]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_input_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_input_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_output
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[выход процесса]
+	(* <- lang_ru;; *);
+	[process output]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_output_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_output_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_parameter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[параметр процесса]
+	(* <- lang_ru;; *);
+	[process parameter]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_parameter_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_parameter_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+state
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[производственное состояние]
+	(* <- lang_ru;; *);
+	[state]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_state_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_state_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_state_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_state_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+lot
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[порция]
+	(* <- lang_ru;; *);
+	[lot]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_lot_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_lot_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_lot_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_lot_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+mode
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[режим]
+	(* <- lang_ru;; *);
+	[mode]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_mode_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_mode_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+path
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[маршрут]
+	(* <- lang_ru;; *);
+	[path]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[поток]
+	(* <- lang_ru;; *);
+	[stream]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_path_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_path_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+batch_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[управление партиями]
+	(* <- lang_ru;; *);
+	[batch control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_batch_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_batch_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+procedural_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[технологическое управление]
+	(* <- lang_ru;; *);
+	[procedural control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_procedural_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_procedural_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+coordination_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[координационное управление]
+	(* <- lang_ru;; *);
+	[coordination control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_coordination_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_coordination_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[управление процессом]
+	(* <- lang_ru;; *);
+	[process control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+recipe_management
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[управление рецептурными данными]
+	(* <- lang_ru;; *);
+	[recipe management]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_recipe_management_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_recipe_management_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+basic_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[базовое управление]
+	(* <- lang_ru;; *);
+	[basic control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_basic_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_basic_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- note;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/note_for_basic_control_ru.html"
+			(* <- lang_ru;; *);
+				"file://content_html/note_for_basic_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+process_management
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[процессное управление]
+	(* <- lang_ru;; *);
+	[process management]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_management_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_management_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+unit_supervision
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[управление оборудованием]
+	(* <- lang_ru;; *);
+	[unit supervision]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_unit_supervision_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_unit_supervision_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+equipment_control
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[оборудовательное управление]
+	(* <- lang_ru;; *);
+	[equipment control]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_equipment_control_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_equipment_control_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+exception_handling
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[обработка исключений]
+	(* <- lang_ru;; *);
+	[exception handling]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_exception_handling_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_exception_handling_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;

@@ -1,0 +1,15 @@
+s_sd_of_pfc_rules 
+=> nrel_main_idtf:
+	[Раздел. Предметная область правил языка PFC]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел базы знаний, описывающий Предметную область правил языка PFC]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;;
+s_sd_of_pfc_rules = [*^"file://s_sd_of_pfc_rules.scsi"*];;
+
+rrel_key_sc_element -> (s_sd_of_pfc_rules -> sd_of_pfc_rules);;
+
+
+

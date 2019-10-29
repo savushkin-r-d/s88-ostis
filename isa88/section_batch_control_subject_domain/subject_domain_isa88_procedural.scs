@@ -1,0 +1,371 @@
+subject_domain_isa88_procedural
+=> nrel_main_idtf: [Предметная область моделей процедурного управления оборудованием рецептурного производства] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Subject domain of procedural control models of batch manufacturing enterprises] (* <- lang_en;; *);
+-> rrel_maximum_studied_object_class:
+procedural_element;
+-> rrel_not_maximum_studied_object_class:
+process_cell_procedure; unit_procedure; operation; phase;
+recipe_procedural_element; equipment_procedural_element;
+recipe_procedure; recipe_unit_procedure; recipe_operation; recipe_phase;
+equipment_procedure; equipment_unit_procedure; equipment_operation; equipment_phase;
+
+-> rrel_explored_relation:
+nrel_execution_order;
+
+=> nrel_private_subject_domain:
+sd_of_pfc_semantics;sd_of_pfc_rules;sd_of_pfc_texts;;
+
+process_cell_procedure
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[процедура ячейки процесса]
+	(* <- lang_ru;; *);
+	[process cell procedure]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_process_cell_procedure_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_process_cell_procedure_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+unit_procedure
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[юнит-процедура]
+	(* <- lang_ru;; *);
+	[unit_procedure]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[процесс]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_unit_procedure_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_unit_procedure_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+operation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[производственная операция]
+	(* <- lang_ru;; *);
+	[operation]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_operation_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_operation_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+phase
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фаза]
+	(* <- lang_ru;; *);
+	[phase]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_phase_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_phase_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+recipe_procedural_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[процедурный элемент процесса]
+	(* <- lang_ru;; *);
+	[recipe procedural element]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_recipe_procedural_element_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_recipe_procedural_element_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+equipment_procedural_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[процедурный элемент оборудования]
+	(* <- lang_ru;; *);
+	[equipment procedural element]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_equipment_procedural_element_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_equipment_procedural_element_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+  recipe_procedure
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[процедура процессной ячейки рецепта]
+  	(* <- lang_ru;; *);
+  	[recipe process cell procedure]
+  	(* <- lang_en;; *);
+  => nrel_idtf:
+  	[процедура рецепта]
+  	(* <- lang_ru;; *);
+  	[recipe procedure]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: procedure;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_recipe_procedure_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_recipe_procedure_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  recipe_unit_procedure
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[рецептурный процесс]
+  	(* <- lang_ru;; *);
+  	[recipe unit procedure]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: unit_procedure;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_recipe_unit_procedure_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_recipe_unit_procedure_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  recipe_operation
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[рецептурная производственная операция]
+  	(* <- lang_ru;; *);
+  	[recipe operation]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: operation;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_recipe_operation_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_recipe_operation_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  recipe_phase
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[рецептурная фаза]
+  	(* <- lang_ru;; *);
+  	[recipe phase]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: phase;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_recipe_phase_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_recipe_phase_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  equipment_procedure
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[процедура процессной ячейки оборудования]
+  	(* <- lang_ru;; *);
+  	[equipment process cell procedure]
+  	(* <- lang_en;; *);
+
+  => nrel_idtf:
+  	[процедура оборудования]
+  	(* <- lang_ru;; *);
+  	[технология оборудования]
+  	(* <- lang_ru;; *);
+  	[equipment procedure]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: procedure;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_equipment_procedure_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_equipment_procedure_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  equipment_unit_procedure
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[процесс оборудования]
+  	(* <- lang_ru;; *);
+  	[equipment unit procedure]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: unit_procedure;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_equipment_unit_procedure_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_equipment_unit_procedure_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+  equipment_operation
+  <- sc_node_not_relation;
+  => nrel_main_idtf:
+  	[производственная операция оборудования]
+  	(* <- lang_ru;; *);
+  	[equipment operation]
+  	(* <- lang_en;; *);
+  <= nrel_inclusion: operation;
+  <- rrel_key_sc_element:
+  	...
+  	(*
+  		<- explanation;;
+  		<= nrel_sc_text_translation:
+  		...
+  		(*
+  		-> rrel_example:
+  				"file://content_html/explanation_for_equipment_operation_ru.html"
+  			(* <- lang_ru;;	*);
+  				"file://content_html/explanation_for_equipment_operation_en.html"
+  			(* <- lang_en;; *);;
+  		*);;
+  	*);;
+
+equipment_phase
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[фаза оборудования]
+	(* <- lang_ru;; *);
+	[equipment phase]
+	(* <- lang_en;; *);
+<= nrel_inclusion: phase;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_equipment_phase_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_equipment_phase_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);;
+
+nrel_execution_order
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[порядок исполнения*]
+	(* <- lang_ru;; *);
+	[execution order*]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+				"file://content_html/explanation_for_nrel_execution_order_ru.html"
+			(* <- lang_ru;;	*);
+				"file://content_html/explanation_for_nrel_execution_order_en.html"
+			(* <- lang_en;; *);;
+		*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: procedural_element;;

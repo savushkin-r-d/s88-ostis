@@ -1,0 +1,479 @@
+sd_of_pfc_texts
+=> nrel_main_idtf:
+	[Предметная область текстов языка PFC]
+	(* <- lang_ru;; *);
+<- subject_domain;
+<- sc_node_struct;
+<- structure;
+-> rrel_maximum_studied_object_class: pfc_element_text;
+-> rrel_not_maximum_studied_object_class:
+	procedure_execution_element_text;
+	allocation_element_text;
+	nesting_of_procedural_element_text;
+	synchronization_element_text;
+	procedural_element_text;
+	connection_text;
+	procedure_starting_text;
+	starting_of_sequence_execution_choice_text;
+	starting_of_parallel_sequence_execution_text;
+	procedure_finishing_text;
+	finishing_of_parallel_sequence_execution_text;
+	finishing_of_sequence_execution_choice_text;
+	phase_text;
+	operation_text;
+	unit_procedure_text;
+	procedure_text;
+	implisit_transition_text;
+	explicit_transition_text;
+	one_way_link_text;
+	two_way_link_text;
+-> rrel_explored_relation: text_signature;;
+
+sc_node_not_relation -> pfc_element_text;;
+pfc_element_text
+=> nrel_main_idtf:
+	[изображение элемента языка PFC]
+	(* <- lang_ru;; *);
+=> nrel_strict_inclusion: 
+	procedure_execution_element_text;
+	allocation_element_text;
+	nesting_of_procedural_element_text;
+	synchronization_element_text;
+	procedural_element_text;
+	connection_text;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение элемента языка PFC — изображение графического примитива, относящегося к языку PFC.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> procedure_execution_element_text;;
+procedure_execution_element_text
+=> nrel_main_idtf:
+	[изображение элемента выполнения процедуры]
+	(* <- lang_ru;; *); 
+=> nrel_strict_inclusion: 
+	procedure_starting_text;
+	starting_of_sequence_execution_choice_text;
+	starting_of_parallel_sequence_execution_text;
+	procedure_finishing_text;
+	finishing_of_sequence_execution_choice_text;
+	finishing_of_parallel_sequence_execution_text;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение элемента выполнения процедуры — изображение графического примитива, связанного с этапом выполнения 			процедурного элемента.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> allocation_element_text;;
+allocation_element_text
+=> nrel_main_idtf:
+	[изображение элемента размещения ресурсов]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/allocation_element_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение элемента размещения ресурсов — изображение овала, идентификатором* которого является спецификация ресурса.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> nesting_of_procedural_element_text;;
+nesting_of_procedural_element_text
+=> nrel_main_idtf:
+	[изображение вложенности процедурного элемента]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение вложенности процедурного элемента — изображение плюса, находящееся внутри правого выделенного обратного от 			наблюдателя прямого угла изображения процедурного элемента и касающегося границы этого выделенного угла.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> synchronization_element_text;;
+synchronization_element_text
+=> nrel_main_idtf:
+	[изображение элемента синхронизации]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/synchronization_element_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение элемента синхронизации — изображение прямоугольника, смежного изображению линейного примитива, являющегося 			высотой прямоугольного примитива процедурного элемента.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> procedural_element_text;;
+procedural_element_text
+=> nrel_main_idtf:
+	[изображение процедурного элемента]
+	(* <- lang_ru;; *); 
+=> nrel_strict_inclusion:
+	phase_text;
+	operation_text;
+	unit_procedure_text;
+	procedure_text;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение процедурного элемента — изображение прямоугольного примитива, количество выделенных прямых углов которого 				указывает на позицию процедурного элемента в процедурной иерархии.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> connection_text;;
+connection_text
+=> nrel_main_idtf:
+	[изображение связи]
+	(* <- lang_ru;; *); 
+=> nrel_strict_inclusion: 
+	implisit_transition_text;
+	explicit_transition_text;
+	one_way_link_text;
+	two_way_link_text;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение связи — изображение линейного примитива, инцидентного изображениям элементов языка PFC.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> procedure_starting_text;;
+procedure_starting_text
+=> nrel_main_idtf:
+	[изображение начала процедуры]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/starting_procedure_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение начала процедуры — изображение равнобедренного треугольника, общая вершина боковых сторон которого 			указывает в сторону наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> starting_of_sequence_execution_choice_text;;
+starting_of_sequence_execution_choice_text
+=> nrel_main_idtf:
+	[изображение начала выбора последовательности выполнения]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/starting_of_sequence_execution_choice_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение начала выбора последовательности выполнения — множество изображений явных и неявных переходов, 
+			инцидентных изображению одной и той же точки и указывающих в сторону наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> starting_of_parallel_sequence_execution_text;;
+starting_of_parallel_sequence_execution_text
+=> nrel_main_idtf:
+	[изображение начала параллельного выполнения последовательности]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/starting_of_parallel_sequence_execution_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение начала параллельного выполнения последовательности — множество изображений явных и неявных переходов, 				инцидентных изображению пары параллельных прямых и указывающих в сторону наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> procedure_finishing_text;;
+procedure_finishing_text
+=> nrel_main_idtf:
+	[изображение конца процедуры]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/procedure_finishing_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение конца процедуры — изображение равнобедренного треугольника, общая вершина боковых сторон которого 				указывает в сторону, обратную наблюдателю.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> finishing_of_parallel_sequence_execution_text;;
+finishing_of_parallel_sequence_execution_text
+=> nrel_main_idtf:
+	[изображение конца параллельного выполнения последовательности]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/finishing_of_parallel_sequence_execution_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение конца параллельного выполнения последовательности — множество изображений явных и неявных переходов, 				инцидентных изображению пары параллельных прямых и указывающих в сторону, обратную наблюдателю.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> finishing_of_sequence_execution_choice_text;;
+finishing_of_sequence_execution_choice_text
+=> nrel_main_idtf:
+	[изображение конца выбора последовательности выполнения]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/finishing_of_sequence_execution_choice_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение конца выбора последовательности выполнения — множество изображений явных и неявных переходов, инцидентных 				изображению одной и той же точки и указывающих в сторону, обратную наблюдателю.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> phase_text;;
+phase_text
+=> nrel_main_idtf:
+	[изображение фазы]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/phase_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение фазы — изображение прямоугольного примитива с выделенным левым прямым углом, обратном от наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> operation_text;;
+operation_text
+=> nrel_main_idtf:
+	[изображение операции]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/operation_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение операции — изображение прямоугольного примитива с выделенными левым и правым прямыми углами, обратными от 				наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> unit_procedure_text;;
+unit_procedure_text
+=> nrel_main_idtf:
+	[изображение процедуры технологической установки]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/unit_procedure_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение процедуры технологической установки — изображение прямоугольного примитива с выделенными левым и правым 				прямыми углами, обратными от наблюдателя, и выделенным правым прямым углом, направленным в сторону наблюдателя.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> procedure_text;;
+procedure_text
+=> nrel_main_idtf:
+	[изображение процедуры]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/procedure_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение процедуры — изображение прямоугольного примитива со всеми выделенными прямыми углами.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> implisit_transition_text;;
+implisit_transition_text
+=> nrel_main_idtf:
+	[изображение неявного перехода]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/implisit_transition_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение неявного перехода — изображение связи, не пересекаемое изображением двух параллельных прямых.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> explicit_transition_text;;
+explicit_transition_text
+=> nrel_main_idtf:
+	[изображение явного перехода]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	"file://images/explicit_transition_text.png";
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение явного перехода — изображение связи, пересекаемое изображением двух параллельных прямых.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> one_way_link_text;;
+one_way_link_text
+=> nrel_main_idtf:
+	[изображение односторонней ссылки]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение односторонней ссылки — изображение связи, инцидентное изображениям двух элементов синхронизации.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> two_way_link_text;;
+two_way_link_text
+=> nrel_main_idtf:
+	[изображение двусторонней ссылки]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Изображение двусторонней ссылки — изображение связи, инцидентное изображению элемента синхронизации с одной стороны, и 			изображению стрелки, указывающей направление синхронизации, с другой стороны.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_norole_relation -> text_signature;;
+text_signature
+=> nrel_main_idtf:
+	[подпись к изображению*]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<= nrel_sc_text_translation: 
+		...
+		(*
+		<- explanation;;
+		-> rrel_example: 
+			[Подпись к изображению* — бинарное отношение, первым компонентом связок которого является знак изображения процедурного 			элемента, а вторым - знак файла, содержащего некоторое текстовое пояснение к изображению процедурного элемента.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
