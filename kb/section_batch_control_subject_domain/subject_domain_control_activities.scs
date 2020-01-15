@@ -1,3 +1,4 @@
 subject_domain_control_activities
 => nrel_main_idtf: [Предметная область деятельности по управлению рецептурным производством] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Subject domain of batch control activities] (* <- lang_en;; *);;
+=> nrel_main_idtf: [Subject domain of batch control activities] (* <- lang_en;; *);
+=> nrel_main_idtf: [Предметна область діяльності по управлінню рецептурним виробництвом] (* <- lang_uk;; *);;

@@ -6,6 +6,8 @@ common_resource
 	(* <- lang_ru;; *);
 	[common resource]
 	(* <- lang_en;; *);
+	[спільний ресурс]
+	(* <- lang_uk;; *);
 => nrel_inclusion:
 	exclusive_use_resource;
 	shared_use_resource;
@@ -20,7 +22,9 @@ common_resource
 				"file://content_html/explanation_for_common_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_common_resource_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_common_resource_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -34,7 +38,9 @@ common_resource
 				"file://content_html/note_for_common_resource_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_common_resource_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_common_resource_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -45,6 +51,8 @@ exclusive_use_resource
 	(* <- lang_ru;; *);
 	[exclusive-use resource]
 	(* <- lang_en;; *);
+	[ресурс з ексклюзивним використанням]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -56,7 +64,9 @@ exclusive_use_resource
 				"file://content_html/explanation_for_exclusive_use_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_exclusive_use_resource_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_exclusive_use_resource_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -67,6 +77,8 @@ shared_use_resource
 	(* <- lang_ru;; *);
 	[shared-use resource]
 	(* <- lang_en;; *);
+	[ресурс із колективним користуванням]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -78,7 +90,9 @@ shared_use_resource
 				"file://content_html/explanation_for_shared_use_resource_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_shared_use_resource_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_shared_use_resource_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -89,6 +103,8 @@ recipe_entity
 	(* <- lang_ru;; *);
 	[recipe entity]
 	(* <- lang_en;; *);
+	[рецептурний об'єкт]
+	(* <- lang_uk;; *);
 => nrel_inclusion:
 	recipe;
 	general_recipe;
@@ -125,7 +141,9 @@ recipe
 				"file://content_html/explanation_for_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -139,7 +157,9 @@ recipe
 				"file://content_html/note_for_recipe_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -149,6 +169,8 @@ general_recipe
 	[общий рецепт]
 	(* <- lang_ru;; *);
 	[general recipe]
+	(* <- lang_en;; *);
+	[загальний рецепт]
 	(* <- lang_en;; *);
 <- rrel_key_sc_element:
 	...
@@ -161,7 +183,9 @@ general_recipe
 				"file://content_html/explanation_for_general_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_general_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_general_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -172,6 +196,8 @@ site_recipe
 	(* <- lang_ru;; *);
 	[site recipe]
 	(* <- lang_en;; *);
+	[місцевий рецепт]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -183,7 +209,9 @@ site_recipe
 				"file://content_html/explanation_for_site_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_site_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_site_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -197,7 +225,9 @@ site_recipe
 				"file://content_html/note_for_site_recipe_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_site_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_site_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -208,6 +238,8 @@ master_recipe
 	(* <- lang_ru;; *);
 	[master recipe]
 	(* <- lang_en;; *);
+	[майстер рецепт]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -219,7 +251,9 @@ master_recipe
 				"file://content_html/explanation_for_master_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_master_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_master_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -230,6 +264,8 @@ control_recipe
 	(* <- lang_ru;; *);
 	[control recipe]
 	(* <- lang_en;; *);
+	[керівний рецепт]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -241,7 +277,9 @@ control_recipe
 				"file://content_html/explanation_for_control_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_control_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_control_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -252,6 +290,8 @@ unit_recipe
 	(* <- lang_ru;; *);
 	[unit recipe]
 	(* <- lang_en;; *);
+	[рецепт технологічного вузлу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -263,7 +303,9 @@ unit_recipe
 				"file://content_html/explanation_for_unit_recipe_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_unit_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -277,7 +319,9 @@ unit_recipe
 				"file://content_html/note_for_unit_recipe_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_unit_recipe_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_unit_recipe_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -288,6 +332,8 @@ formula
 	(* <- lang_ru;; *);
 	[formula]
 	(* <- lang_en;; *);
+	[формула]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -299,7 +345,9 @@ formula
 				"file://content_html/explanation_for_formula_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_formula_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_formula_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -310,6 +358,8 @@ header
 	(* <- lang_ru;; *);
 	[header]
 	(* <- lang_en;; *);
+	[заголовок]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -321,7 +371,9 @@ header
 				"file://content_html/explanation_for_header_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_header_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_header_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -330,6 +382,8 @@ nrel_recipe_procedure
 => nrel_idtf:
 	[технология рецепта*]
 	(* <- lang_ru;; *);
+	[рецептурна процедура *]
+	(* <- lang_uk;; *);
 => nrel_main_idtf:
 	[процедура рецепта*]
 	(* <- lang_ru;; *);
@@ -343,9 +397,13 @@ line
 	(* <- lang_ru;; *);
 	[line]
 	(* <- lang_en;; *);
+	[лінія]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	[train]
 	(* <- lang_en;; *);
+	[потокова лінія]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -357,7 +415,9 @@ line
 				"file://content_html/explanation_for_line_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_line_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_line_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -368,6 +428,8 @@ procedure
 	(* <- lang_ru;; *);
 	[procedure]
 	(* <- lang_en;; *);
+	[процедура]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -379,7 +441,9 @@ procedure
 				"file://content_html/explanation_for_procedure_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_procedure_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_procedure_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -393,7 +457,9 @@ procedure
 				"file://content_html/note_for_procedure_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_procedure_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_procedure_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -404,6 +470,11 @@ batch
 	(* <- lang_ru;; *);
 	[batch]
 	(* <- lang_en;; *);
+	[партія]
+	(* <- lang_uk;; *);
+=> nrel_idtf:
+	[порційне]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -440,6 +511,8 @@ process
 	(* <- lang_ru;; *);
 	[process]
 	(* <- lang_en;; *);
+	[технологічний процес]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -451,7 +524,9 @@ process
 				"file://content_html/explanation_for_process_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -462,6 +537,8 @@ process_input
 	(* <- lang_ru;; *);
 	[process input]
 	(* <- lang_en;; *);
+	[вхід процесу ]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -473,7 +550,9 @@ process_input
 				"file://content_html/explanation_for_process_input_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_input_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_input_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -484,6 +563,8 @@ process_output
 	(* <- lang_ru;; *);
 	[process output]
 	(* <- lang_en;; *);
+	[вихід процесу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -495,7 +576,9 @@ process_output
 				"file://content_html/explanation_for_process_output_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_output_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_output_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -506,6 +589,8 @@ process_parameter
 	(* <- lang_ru;; *);
 	[process parameter]
 	(* <- lang_en;; *);
+	[технологічний параметр]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -517,7 +602,9 @@ process_parameter
 				"file://content_html/explanation_for_process_parameter_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_parameter_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_parameter_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -527,6 +614,8 @@ state
 	[производственное состояние]
 	(* <- lang_ru;; *);
 	[state]
+	(* <- lang_en;; *);
+	[стан]
 	(* <- lang_en;; *);
 <- rrel_key_sc_element:
 	...
@@ -539,7 +628,9 @@ state
 				"file://content_html/explanation_for_state_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_state_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_state_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -553,7 +644,9 @@ state
 				"file://content_html/note_for_state_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_state_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_state_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -564,6 +657,8 @@ lot
 	(* <- lang_ru;; *);
 	[lot]
 	(* <- lang_en;; *);
+	[партія матеріалу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -575,7 +670,9 @@ lot
 				"file://content_html/explanation_for_lot_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_lot_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_lot_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -589,7 +686,9 @@ lot
 				"file://content_html/note_for_lot_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_lot_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_lot_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -600,6 +699,8 @@ mode
 	(* <- lang_ru;; *);
 	[mode]
 	(* <- lang_en;; *);
+	[режим]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -611,7 +712,9 @@ mode
 				"file://content_html/explanation_for_mode_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_mode_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_mode_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -622,11 +725,15 @@ path
 	(* <- lang_ru;; *);
 	[path]
 	(* <- lang_en;; *);
+	[шлях]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	[поток]
 	(* <- lang_ru;; *);
 	[stream]
 	(* <- lang_en;; *);
+	[потік]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -638,7 +745,9 @@ path
 				"file://content_html/explanation_for_path_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_path_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_path_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -649,6 +758,8 @@ batch_control
 	(* <- lang_ru;; *);
 	[batch control]
 	(* <- lang_en;; *);
+	[керування порційним виробництвом]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -660,7 +771,9 @@ batch_control
 				"file://content_html/explanation_for_batch_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_batch_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_batch_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -671,6 +784,8 @@ procedural_control
 	(* <- lang_ru;; *);
 	[procedural control]
 	(* <- lang_en;; *);
+	[процедурне керування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -682,7 +797,9 @@ procedural_control
 				"file://content_html/explanation_for_procedural_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_procedural_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_procedural_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -693,6 +810,8 @@ coordination_control
 	(* <- lang_ru;; *);
 	[coordination control]
 	(* <- lang_en;; *);
+	[координаційне керування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -704,7 +823,9 @@ coordination_control
 				"file://content_html/explanation_for_coordination_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_coordination_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_coordination_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -715,6 +836,8 @@ process_control
 	(* <- lang_ru;; *);
 	[process control]
 	(* <- lang_en;; *);
+	[керування технологічним процесом]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -726,7 +849,9 @@ process_control
 				"file://content_html/explanation_for_process_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -737,6 +862,8 @@ recipe_management
 	(* <- lang_ru;; *);
 	[recipe management]
 	(* <- lang_en;; *);
+	[керування рецептами]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -748,7 +875,9 @@ recipe_management
 				"file://content_html/explanation_for_recipe_management_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_management_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_management_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -759,6 +888,8 @@ basic_control
 	(* <- lang_ru;; *);
 	[basic control]
 	(* <- lang_en;; *);
+	[базове керування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -770,7 +901,9 @@ basic_control
 				"file://content_html/explanation_for_basic_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_basic_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_basic_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -784,7 +917,9 @@ basic_control
 				"file://content_html/note_for_basic_control_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_basic_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_basic_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -795,6 +930,8 @@ process_management
 	(* <- lang_ru;; *);
 	[process management]
 	(* <- lang_en;; *);
+	[oрганізація технологічного процесу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -806,7 +943,9 @@ process_management
 				"file://content_html/explanation_for_process_management_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_management_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_management_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -817,6 +956,8 @@ unit_supervision
 	(* <- lang_ru;; *);
 	[unit supervision]
 	(* <- lang_en;; *);
+	[контроль роботи технологічного вузлу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -828,17 +969,21 @@ unit_supervision
 				"file://content_html/explanation_for_unit_supervision_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_supervision_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_unit_supervision_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
 equipment_control
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[оборудовательное управление]
+	[управление оборудованием]
 	(* <- lang_ru;; *);
 	[equipment control]
 	(* <- lang_en;; *);
+	[апаратурне керування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -850,7 +995,9 @@ equipment_control
 				"file://content_html/explanation_for_equipment_control_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_control_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_control_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -861,6 +1008,8 @@ exception_handling
 	(* <- lang_ru;; *);
 	[exception handling]
 	(* <- lang_en;; *);
+	[обробка винятків]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -872,6 +1021,8 @@ exception_handling
 				"file://content_html/explanation_for_exception_handling_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_exception_handling_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_exception_handling_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
