@@ -1,6 +1,7 @@
 subject_domain_isa88_procedural
 => nrel_main_idtf: [Предметная область моделей процедурного управления оборудованием рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of procedural control models of batch manufacturing enterprises] (* <- lang_en;; *);
+=> nrel_main_idtf: [Предметна область моделей процедур управління устаткуванням рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 procedural_element;
 -> rrel_not_maximum_studied_object_class:
@@ -22,6 +23,8 @@ process_cell_procedure
 	(* <- lang_ru;; *);
 	[process cell procedure]
 	(* <- lang_en;; *);
+	[технологічна комірка процедури]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -42,11 +45,17 @@ unit_procedure
 => nrel_main_idtf:
 	[юнит-процедура]
 	(* <- lang_ru;; *);
-	[unit_procedure]
+	[unit procedure]
 	(* <- lang_en;; *);
+	[процедура технологічного вузлу ]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	[процесс]
 	(* <- lang_ru;; *);
+	[process]
+	(* <- lang_en;; *);
+	[технологічний процес]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -58,7 +67,9 @@ unit_procedure
 				"file://content_html/explanation_for_unit_procedure_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_procedure_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_unit_procedure_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -69,6 +80,8 @@ operation
 	(* <- lang_ru;; *);
 	[operation]
 	(* <- lang_en;; *);
+	[виробнича операція]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -80,6 +93,8 @@ operation
 				"file://content_html/explanation_for_operation_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_operation_en.html"
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_operation_uk.html"
 			(* <- lang_en;; *);;
 		*);;
 	*);;
@@ -91,6 +106,8 @@ phase
 	(* <- lang_ru;; *);
 	[phase]
 	(* <- lang_en;; *);
+	[етап]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -102,7 +119,9 @@ phase
 				"file://content_html/explanation_for_phase_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_phase_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_phase_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -112,6 +131,8 @@ recipe_procedural_element
 	[процедурный элемент процесса]
 	(* <- lang_ru;; *);
 	[recipe procedural element]
+	(* <- lang_en;; *);
+	[процедурний елемент процесу]
 	(* <- lang_en;; *);
 <- rrel_key_sc_element:
 	...
@@ -135,6 +156,8 @@ equipment_procedural_element
 	(* <- lang_ru;; *);
 	[equipment procedural element]
 	(* <- lang_en;; *);
+	[процедурний елемент устаткування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -157,11 +180,15 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[recipe process cell procedure]
   	(* <- lang_en;; *);
+	[процедура процессного осередку рецепту]
+  	(* <- lang_uk;; *);
   => nrel_idtf:
   	[процедура рецепта]
   	(* <- lang_ru;; *);
   	[recipe procedure]
   	(* <- lang_en;; *);
+	[рецептурна процедура]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: procedure;
   <- rrel_key_sc_element:
   	...
@@ -174,7 +201,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_recipe_procedure_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_recipe_procedure_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_procedure_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -185,6 +214,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[recipe unit procedure]
   	(* <- lang_en;; *);
+	[процедура технологічного вузлу рецептурної процедури]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: unit_procedure;
   <- rrel_key_sc_element:
   	...
@@ -197,7 +228,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_recipe_unit_procedure_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_recipe_unit_procedure_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_unit_procedure_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -208,6 +241,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[recipe operation]
   	(* <- lang_en;; *);
+  	[рецептурна операція]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: operation;
   <- rrel_key_sc_element:
   	...
@@ -220,7 +255,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_recipe_operation_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_recipe_operation_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_operation_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -231,6 +268,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[recipe phase]
   	(* <- lang_en;; *);
+  	[рецептурний етап]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: phase;
   <- rrel_key_sc_element:
   	...
@@ -243,7 +282,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_recipe_phase_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_recipe_phase_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_phase_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -254,6 +295,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[equipment process cell procedure]
   	(* <- lang_en;; *);
+	[ апаратурна процедура технологічної комірки]
+  	(* <- lang_uk;; *);
 
   => nrel_idtf:
   	[процедура оборудования]
@@ -262,6 +305,9 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[equipment procedure]
   	(* <- lang_en;; *);
+  	[апаратурна процедура]
+  	(* <- lang_uk;; *);
+
   <= nrel_inclusion: procedure;
   <- rrel_key_sc_element:
   	...
@@ -274,6 +320,8 @@ equipment_procedural_element
   				"file://content_html/explanation_for_equipment_procedure_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_equipment_procedure_en.html"
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_procedure_uk.html"
   			(* <- lang_en;; *);;
   		*);;
   	*);;
@@ -285,6 +333,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[equipment unit procedure]
   	(* <- lang_en;; *);
+  	[апаратурна процедура технологічного вузла ]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: unit_procedure;
   <- rrel_key_sc_element:
   	...
@@ -297,7 +347,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_equipment_unit_procedure_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_equipment_unit_procedure_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_unit_procedure_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -308,6 +360,8 @@ equipment_procedural_element
   	(* <- lang_ru;; *);
   	[equipment operation]
   	(* <- lang_en;; *);
+	[апаратурна операція]
+  	(* <- lang_uk;; *);
   <= nrel_inclusion: operation;
   <- rrel_key_sc_element:
   	...
@@ -320,7 +374,9 @@ equipment_procedural_element
   				"file://content_html/explanation_for_equipment_operation_ru.html"
   			(* <- lang_ru;;	*);
   				"file://content_html/explanation_for_equipment_operation_en.html"
-  			(* <- lang_en;; *);;
+  			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_operation_uk.html"
+  			(* <- lang_uk;; *);;
   		*);;
   	*);;
 
@@ -331,6 +387,8 @@ equipment_phase
 	(* <- lang_ru;; *);
 	[equipment phase]
 	(* <- lang_en;; *);
+	[апаратурний етап]
+	(* <- lang_uk;; *);
 <= nrel_inclusion: phase;
 <- rrel_key_sc_element:
 	...
@@ -343,7 +401,9 @@ equipment_phase
 				"file://content_html/explanation_for_equipment_phase_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_phase_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_phase_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -354,6 +414,8 @@ nrel_execution_order
 	(* <- lang_ru;; *);
 	[execution order*]
 	(* <- lang_en;; *);
+	[порядок виконання*]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*

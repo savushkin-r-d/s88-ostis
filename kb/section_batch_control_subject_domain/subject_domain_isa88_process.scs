@@ -1,6 +1,7 @@
 subject_domain_isa88_process
 => nrel_main_idtf: [Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
+=> nrel_main_idtf: [Предметна область процессных моделей рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 process_element;
 -> rrel_not_maximum_studied_object_class:
@@ -15,6 +16,8 @@ process_element
 	(* <- lang_ru;; *);
 	[process element]
 	(* <- lang_en;; *);
+	[елемент процесу]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -38,6 +41,8 @@ process_stage
 	(* <- lang_ru;; *);
 	[process stage]
 	(* <- lang_en;; *);
+	[технологічна стадія ]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -49,7 +54,9 @@ process_stage
 				"file://content_html/explanation_for_process_stage_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_stage_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_stage_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -60,6 +67,8 @@ process_operation
 (* <- lang_ru;; *);
 [process operation]
 (* <- lang_en;; *);
+[технологічна операція]
+(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 ...
 (*
@@ -71,7 +80,9 @@ process_operation
 			"file://content_html/explanation_for_process_operation_ru.html"
 		(* <- lang_ru;;	*);
 			"file://content_html/explanation_for_process_operation_en.html"
-		(* <- lang_en;; *);;
+		(* <- lang_en;; *);
+			"file://content_html/explanation_for_process_operation_uk.html"
+		(* <- lang_uk;; *);;
 	*);;
 *);;
 
@@ -82,6 +93,8 @@ process_action
 	(* <- lang_ru;; *);
 	[process action]
 	(* <- lang_en;; *);
+	[технологічна дія]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -93,7 +106,9 @@ process_action
 				"file://content_html/explanation_for_process_action_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_action_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_action_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -107,7 +122,9 @@ process_action
 				"file://content_html/note_for_process_action_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_process_action_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_process_action_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -118,6 +135,8 @@ nrel_process_element_link
 	(* <- lang_ru;; *);
 	[process element link*]
 	(* <- lang_en;; *);
+	[зв'язок елементів процесу*]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*

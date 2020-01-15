@@ -1,6 +1,7 @@
 subject_domain_isa88_physical
 => nrel_main_idtf: [Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
+=> nrel_main_idtf: [Предметна область фізичних моделей рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class: equipment_entity;
 -> rrel_not_maximum_studied_object_class:
 process_cell; unit; equipment_module;
@@ -20,6 +21,8 @@ equipment_entity
 	(* <- lang_ru;; *);
 	[equipment_entity]
 	(* <- lang_en;; *);
+	[апаратурний об’єкт]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -31,7 +34,9 @@ equipment_entity
 				"file://content_html/explanation_for_equipment_entity_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_entity_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_entity_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 => nrel_inclusion: process_cell; unit; equipment_module; control_module; enterprise; site; area;;
@@ -43,6 +48,8 @@ process_cell
 	(* <- lang_ru;; *);
 	[process cell]
 	(* <- lang_en;; *);
+	[технологічна комірка]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -54,7 +61,9 @@ process_cell
 				"file://content_html/explanation_for_process_cell_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_process_cell_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_process_cell_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -68,7 +77,9 @@ process_cell
 				"file://content_html/note_for_process_cell_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_process_cell_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_process_cell_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -79,7 +90,7 @@ unit
 	(* <- lang_ru;; *);
 	[unit]
 	(* <- lang_en;; *);
-	[апарат]
+	[технологічний вузол]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -92,7 +103,9 @@ unit
 				"file://content_html/explanation_for_unit_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_unit_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_unit_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -106,7 +119,9 @@ unit
 				"file://content_html/note_for_unit_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_unit_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_unit_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -115,8 +130,10 @@ equipment_module
 => nrel_main_idtf:
 	[агрегат]
 	(* <- lang_ru;; *);
-	[equipment_module]
+	[equipment module]
 	(* <- lang_en;; *);
+	[модуль технологічного устатковання]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -128,7 +145,9 @@ equipment_module
 				"file://content_html/explanation_for_equipment_module_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_module_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_module_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -151,8 +170,10 @@ control_module
 => nrel_main_idtf:
 	[блок управления]
 	(* <- lang_ru;; *);
-	[control_module]
+	[control module]
 	(* <- lang_en;; *);
+	[модуль керування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -164,7 +185,9 @@ control_module
 				"file://content_html/explanation_for_control_module_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_control_module_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_control_module_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -178,7 +201,9 @@ control_module
 				"file://content_html/note_for_control_module_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_control_module_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_control_module_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -189,6 +214,11 @@ enterprise
 	(* <- lang_ru;; *);
 	[enterprise]
 	(* <- lang_en;; *);
+	[підприємство]
+	(* <- lang_uk;; *);
+=> nrel_idtf:
+	[промислове підприємство]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -200,7 +230,9 @@ enterprise
 				"file://content_html/explanation_for_enterprise_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_enterprise_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_enterprise_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -211,6 +243,11 @@ site
 	(* <- lang_ru;; *);
 	[site]
 	(* <- lang_en;; *);
+	[виробничий майданчик]
+	(* <- lang_uk;; *);
+=> nrel_idtf:
+	[завод]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -222,7 +259,9 @@ site
 				"file://content_html/explanation_for_site_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_site_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_site_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -236,7 +275,9 @@ site
 				"file://content_html/note_for_site_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_site_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_site_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -247,6 +288,8 @@ area
 	(* <- lang_ru;; *);
 	[area]
 	(* <- lang_en;; *);
+	[цех]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -258,7 +301,9 @@ area
 				"file://content_html/explanation_for_area_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_area_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_area_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -272,7 +317,9 @@ area
 				"file://content_html/note_for_area_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_area_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_area_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -283,6 +330,8 @@ equipment_relation
 	(* <- lang_ru;; *);
 	[equipment relation]
 	(* <- lang_en;; *);
+	[зв'язок устаткування]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -306,6 +355,8 @@ nrel_contains
 	(* <- lang_ru;; *);
 	[contains*]
 	(* <- lang_en;; *);
+	[містити*]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
