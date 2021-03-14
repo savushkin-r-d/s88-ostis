@@ -1,4 +1,5 @@
 subject_domain_isa88
+<- sc_node_struct;
 => nrel_main_idtf:
   [Предметная область предприятий рецептурного производства]
   (* <- lang_ru;; *);
@@ -9,4 +10,7 @@ subject_domain_isa88
   [Themenbereich chargenorientierte Produktionsunternehmen]
   (* <- lang_de;; *);
 => nrel_private_subject_domain:
-subject_domain_isa88_physical; subject_domain_isa88_process; subject_domain_isa88_procedural; subject_domain_control_activities;;
+subject_domain_isa88_physical; 
+subject_domain_isa88_process; 
+subject_domain_isa88_procedural; 
+subject_domain_control_activities;;

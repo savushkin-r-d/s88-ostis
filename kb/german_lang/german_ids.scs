@@ -1,3 +1,6 @@
+lang_de
+<-sc_node_not_relation;;
+
 lang_ru
 => nrel_main_idtf:
    [Russisch Sprache] (* <- lang_de;; *);;
@@ -6,13 +9,17 @@ lang_en
 => nrel_main_idtf:
    [Englische Sprache] (* <- lang_de;; *);;
 
+lang_uk
+=> nrel_main_idtf:
+   [Ukrainisch] (* <- lang_de;; *);;
+
 nrel_summary
 => nrel_main_idtf:
    [Überblick*] (* <- lang_de;; *);;
 
 rrel_key_sc_element
 => nrel_main_idtf:
-   [key-sc-element'] (* <- lang_de;; *);;
+   [schlüssel-sc-element'] (* <- lang_de;; *);; 
 
 ui_start_sc_element
 => nrel_main_idtf:

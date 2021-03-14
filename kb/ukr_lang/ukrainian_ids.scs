@@ -6,12 +6,16 @@ lang_en
 => nrel_main_idtf:
    [Англійська мова] (* <- lang_uk;; *);;
 
+lang_de
+=> nrel_main_idtf:
+   [Німецька мова] (* <- lang_uk;; *);;
+
 nrel_summary
 => nrel_main_idtf:
    [анотація*] (* <- lang_uk;; *);;
 
 rrel_key_sc_element
-=> nrel_main_idtf:
+=> nrel_main_idtf: 
    [ключовий sc-елемент'] (* <- lang_uk;; *);;
 
 ui_start_sc_element
