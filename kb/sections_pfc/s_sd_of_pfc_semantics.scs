@@ -2,9 +2,18 @@ s_sd_of_pfc_semantics
 => nrel_main_idtf:
 	[Раздел. Предметная область семантики языка PFC]
 	(* <- lang_ru;; *);
+	[Section. Subject area of PFC semantics]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область семантики мови PFC]
+	(* <- lang_uk;; *);
+	
 => nrel_idtf:
 	[Раздел базы знаний, описывающий Предметную область семантики языка PFC]
 	(* <- lang_ru;; *);
+	[Knowledge base section describing the Subject Area of PFC Semantics]
+	(* <- lang_en;; *);
+	[Розділ бази знань, що описує предметну область семантики мови PFC]
+	(* <- lang_uk;; *);
 
 <- not_enough_formed_structure;;
 s_sd_of_pfc_semantics = [*^"file://s_sd_of_pfc_semantics.scsi"*];;

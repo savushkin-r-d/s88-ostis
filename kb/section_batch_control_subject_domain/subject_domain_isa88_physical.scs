@@ -1,18 +1,26 @@
 subject_domain_isa88_physical
-=> nrel_main_idtf: [Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
-=> nrel_main_idtf: [Предметна область фізичних моделей рецептурного виробництва] (* <- lang_uk;; *);
+<- sc_node_struct;
+=> nrel_main_idtf: 
+	[Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
+ 	[Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
+	[Предметна область фізичних моделей рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class: equipment_entity;
 -> rrel_not_maximum_studied_object_class:
-process_cell; unit; equipment_module;
-control_module; enterprise; site; area;
+process_cell; 
+unit; 
+equipment_module;
+control_module; 
+enterprise; 
+site; 
+area;
 equipment_relation;
 -> rrel_explored_relation:
 nrel_contains;
 
 => nrel_private_subject_domain:
-sb_d_of_p_id_semantics;sb_d_of_p_id_rules;sb_d_of_p_id_texts;;
-
+sb_d_of_p_id_semantics;
+sb_d_of_p_id_rules;
+sb_d_of_p_id_texts;;
 
 equipment_entity
 <- sc_node_not_relation;
@@ -161,7 +169,9 @@ equipment_module
 				"file://content_html/note_for_equipment_module_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_equipment_module_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_equipment_module_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -217,6 +227,10 @@ enterprise
 	[підприємство]
 	(* <- lang_uk;; *);
 => nrel_idtf:
+	[промышленное предприятие]
+	(* <- lang_ru;; *);
+	[industrial enterprise]
+	(* <- lang_en;; *);
 	[промислове підприємство]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
@@ -246,6 +260,10 @@ site
 	[виробничий майданчик]
 	(* <- lang_uk;; *);
 => nrel_idtf:
+	[завод]
+	(* <- lang_ru;; *);
+	[plant]
+	(* <- lang_en;; *);
 	[завод]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
@@ -286,7 +304,7 @@ area
 => nrel_main_idtf:
 	[производственный участок]
 	(* <- lang_ru;; *);
-	[area]
+	[manufactoring area]
 	(* <- lang_en;; *);
 	[цех]
 	(* <- lang_uk;; *);
@@ -343,7 +361,9 @@ equipment_relation
 				"file://content_html/explanation_for_equipment_relation_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_equipment_relation_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_equipment_relation_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -368,7 +388,22 @@ nrel_contains
 				"file://content_html/explanation_for_nrel_contains_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_nrel_contains_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_nrel_contains_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
-=> nrel_first_domain: nrel_second_domain: equipment_entity;;
+=> nrel_first_domain: nrel_second_domain: equipment_entity;
+=> nrel_definitional_domain: equipment_entity;;
+
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_contains;;
+	<- arity;;
+*);;
+
+oriented_relation -> nrel_contains;;
+reflexive_relation -|> nrel_contains;;
+transitive_relation -> nrel_contains;;
+symmetric_relation -|> nrel_contains;;

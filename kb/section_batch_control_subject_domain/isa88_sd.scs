@@ -111,8 +111,6 @@ recipe_entity
 	site_recipe;
 	master_recipe;
 	control_recipe;
-	//recipe_component;
-	//recipe_building_block;
 <- rrel_key_sc_element:
 	...
 	(*
@@ -124,12 +122,21 @@ recipe_entity
 				"file://content_html/explanation_for_recipe_entity_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_recipe_entity_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_recipe_entity_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
 recipe
 <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[рецепт]
+	(* <- lang_ru;; *);
+	[recipe]
+	(* <- lang_en;; *);
+	[рецепт]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -330,9 +337,9 @@ formula
 => nrel_main_idtf:
 	[рецептурная формула]
 	(* <- lang_ru;; *);
-	[formula]
+	[recipe formula]
 	(* <- lang_en;; *);
-	[формула]
+	[рецептурная формула]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -356,9 +363,9 @@ header
 => nrel_main_idtf:
 	[заголовок рецепта]
 	(* <- lang_ru;; *);
-	[header]
+	[header of recipe]
 	(* <- lang_en;; *);
-	[заголовок]
+	[заголовок рецепта]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -382,13 +389,17 @@ nrel_recipe_procedure
 => nrel_idtf:
 	[технология рецепта*]
 	(* <- lang_ru;; *);
-	[рецептурна процедура *]
+	[recipe technology*]
+	(* <- lang_en;; *);
+	[рецептурна процедура*]
 	(* <- lang_uk;; *);
 => nrel_main_idtf:
 	[процедура рецепта*]
 	(* <- lang_ru;; *);
 	[recipe procedure*]
-	(* <- lang_en;; *);;
+	(* <- lang_en;; *);
+	[процедура рецепта*]
+	(* <- lang_uk;; *);;
 
 line
 <- sc_node_not_relation;
@@ -400,6 +411,8 @@ line
 	[лінія]
 	(* <- lang_uk;; *);
 => nrel_idtf:
+	[потоковая линия]
+	(* <- lang_ru;; *);
 	[train]
 	(* <- lang_en;; *);
 	[потокова лінія]
@@ -473,6 +486,10 @@ batch
 	[партія]
 	(* <- lang_uk;; *);
 => nrel_idtf:
+	[порционное]
+	(* <- lang_ru;; *);
+	[portioned]
+	(* <- lang_en;; *);
 	[порційне]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
@@ -486,7 +503,9 @@ batch
 				"file://content_html/explanation_for_batch_ru.html"
 			(* <- lang_ru;;	*);
 				"file://content_html/explanation_for_batch_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/explanation_for_batch_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -500,7 +519,9 @@ batch
 				"file://content_html/note_for_batch_ru.html"
 			(* <- lang_ru;; *);
 				"file://content_html/note_for_batch_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; *);
+				"file://content_html/note_for_batch_uk.html"
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -509,7 +530,7 @@ process
 => nrel_main_idtf:
 	[производственный процесс]
 	(* <- lang_ru;; *);
-	[process]
+	[manufacturing process]
 	(* <- lang_en;; *);
 	[технологічний процес]
 	(* <- lang_uk;; *);
@@ -537,7 +558,7 @@ process_input
 	(* <- lang_ru;; *);
 	[process input]
 	(* <- lang_en;; *);
-	[вхід процесу ]
+	[вхід процесу]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -613,10 +634,10 @@ state
 => nrel_main_idtf:
 	[производственное состояние]
 	(* <- lang_ru;; *);
-	[state]
+	[production state]
 	(* <- lang_en;; *);
-	[стан]
-	(* <- lang_en;; *);
+	[виробничий стан]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -653,9 +674,9 @@ state
 lot
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[порция]
+	[партия материала]
 	(* <- lang_ru;; *);
-	[lot]
+	[lot of material]
 	(* <- lang_en;; *);
 	[партія матеріалу]
 	(* <- lang_uk;; *);
