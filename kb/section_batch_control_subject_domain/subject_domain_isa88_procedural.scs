@@ -142,11 +142,11 @@ phase
 recipe_procedural_element
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[процедурный элемент процесса]
+	[рецептурный процедурный элемент]
 	(* <- lang_ru;; *);
 	[recipe procedural element]
 	(* <- lang_en;; *);
-	[процедурний елемент процесу]
+	[процедурний елемент рецепта]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
