@@ -3,7 +3,7 @@ subject_domain_isa88_process
 => nrel_main_idtf: 
 	[Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
 	[Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
-	[Предметна область процессных моделей рецептурного виробництва] (* <- lang_uk;; *);
+	[Предметна область технологічних моделей порційного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 process_element;
 -> rrel_not_maximum_studied_object_class:

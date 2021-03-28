@@ -125,7 +125,7 @@ allocation_element
 			[The resource allocation element is a structural element of the PFC language, indicating the distribution and coordination of the use of common resources (raw materials, equipment, etc.). ]
 			(* <- lang_en;; *);;
 			-> rrel_example: 
-			[Елемент розміщення ресурсів - структурний елемент мови PFC, який вказує на розподіл і узгодження використання загальних ресурсів (сировини, устаткування та ін.). ]
+			[Елемент надання ресурсу - структурний елемент мови PFC, який вказує на розподіл і узгодження використання спільних ресурсів (сировини, устатковання та ін.).]
 			(* <- lang_uk;; *);;
 		*);;
 	*);;
@@ -158,7 +158,7 @@ structural_element
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Структурний елемент - елемент мови PFC, який разом з безліччю процедурних елементів утворює діаграму мови PFC.]
+			[Структурний елемент - елемент мови PFC, який разом з багатьма процедурними елементами утворює діаграму мови PFC]
 			(* <- lang_uk;; *);;
 		*);;
 	*);;
@@ -240,7 +240,7 @@ phase
 	(* <- lang_ru;; *);
 	[phase]
 	(* <- lang_en;; *);
-	[фаза]
+	[етап]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -399,7 +399,7 @@ unit_procedure
 	(* <- lang_ru;; *);
 	[process setup procedure]
 	(* <- lang_en;; *);
-	[процедура технологічної установки]
+	[процедура технологічного встановлення]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -413,7 +413,7 @@ unit_procedure
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[The plant procedure is the third level of the procedural hierarchy.]
+			[The process setup procedure is the third level of the procedural hierarchy.]
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
@@ -447,7 +447,7 @@ procedure_starting
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Початок виконання процедури - кожен елемент безлічі початку виконання процедури є клас тимчасових сутностей, у яких збігається момент початку виконання процедурного елемента. ]
+			[Початок виконання процедури - кожен елемент набору початку виконання процедури є клас тимчасових сутностей, у яких збігається момент початку виконання процедурного елемента.]
 			(* <- lang_uk;; *);;
 		*);;
 	*);;
@@ -781,7 +781,7 @@ nrel_one_way_link
 	(* <- lang_ru;; *);
 	[one-way link*]
 	(* <- lang_en;; *);
-	[одностороння посилання*]
+	[одностороннє посилання*]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -823,7 +823,7 @@ nrel_two_way_link
 	(* <- lang_ru;; *);
 	[two-way link*]
 	(* <- lang_en;; *);
-	[двостороння посилання*]
+	[двостороннє посилання*]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -1058,7 +1058,7 @@ recipe_procedure_preparation_curd_mass
 	(* <- lang_ru;; *);
 	[recipe procedure preparation curd mass]
 	(* <- lang_en;; *);
-	[рецептурная процедура для приготування сирної маси]
+	[рецептурна процедура для приготування сирної маси]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> selection_of_equipment;;
@@ -1068,7 +1068,7 @@ selection_of_equipment
 	(* <- lang_ru;; *);
 	[selection of equipment]
 	(* <- lang_en;; *);
-	[вибір обладнання]
+	[вибір устатковання]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> supply_line;;
@@ -1128,7 +1128,7 @@ washing
 	(* <- lang_ru;; *);
 	[washing]
 	(* <- lang_en;; *);
-	[прання]
+	[мийка]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> operational_procedure_serum_separation;;
@@ -1148,7 +1148,7 @@ operational_procedure_serum_pumping
 	(* <- lang_ru;; *);
 	[operational procedure "Serum pumping"]
 	(* <- lang_en;; *);
-	[операційна процедура для операції "Відкачування сироватки" ]
+	[операційна процедура для операції "Відкачування сироватки"]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> operational_procedure;;
@@ -1158,7 +1158,7 @@ operational_procedure
 	(* <- lang_ru;; *);
 	[operational procedure]
 	(* <- lang_en;; *);
-	[оперативна процедура]
+	[операційна процедура]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> heating;;
@@ -1168,7 +1168,7 @@ heating
 	(* <- lang_ru;; *);
 	[heating]
 	(* <- lang_en;; *);
-	[опаленне]
+	[підігрівання]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> mixing;;
@@ -1178,7 +1178,7 @@ mixing
 	(* <- lang_ru;; *);
 	[mixing]
 	(* <- lang_en;; *);
-	[змішування]
+	[перемішування]
 	(* <- lang_uk;; *);;		
 
 sc_node_not_relation -> temperature;;
@@ -1188,7 +1188,7 @@ temperature
 	(* <- lang_ru;; *);
 	[temperature]
 	(* <- lang_en;; *);
-	[температури]
+	[температура]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> direction;;
@@ -1198,7 +1198,7 @@ direction
 	(* <- lang_ru;; *);
 	[direction]
 	(* <- lang_en;; *);
-	[напрямку]
+	[напрямок]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> time;;
@@ -1228,7 +1228,7 @@ unit_procedure_preparation_curd_mass
 	(* <- lang_ru;; *);
 	[unit procedure preparation curd mass]
 	(* <- lang_en;; *);
-	[апаратна процедура для приготування сирної маси]
+	[процедура технологічного вузла для приготування сирної маси]
 	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> overtemperature_check;;
@@ -1261,7 +1261,7 @@ leavening
 	[заквашування]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> souring;;
+/*sc_node_not_relation -> souring;;
 souring
 => nrel_main_idtf:
 	[сквашивание]
@@ -1269,7 +1269,7 @@ souring
 	[souring]
 	(* <- lang_en;; *);
 	[сквашивание]
-	(* <- lang_uk;; *);;
+	(* <- lang_uk;; *);;*/
 
 sc_node_not_relation -> cutting;;
 cutting
@@ -1298,5 +1298,5 @@ readiness_for_delivery
 	(* <- lang_ru;; *);
 	[ready to issue]
 	(* <- lang_en;; *);
-	[готово до видачі]
+	[готове до видання]
 	(* <- lang_uk;; *);;

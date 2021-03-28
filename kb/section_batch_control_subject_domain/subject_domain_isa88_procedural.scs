@@ -3,7 +3,7 @@ subject_domain_isa88_procedural
 => nrel_main_idtf: 
 	[Предметная область моделей процедурного управления оборудованием рецептурного производства] (* <- lang_ru;; *);	
 	[Subject domain of procedural control models of batch manufacturing enterprises] (* <- lang_en;; *);
-	[Предметна область моделей процедур управління устаткуванням рецептурного виробництва] (* <- lang_uk;; *);
+	[Предметна область моделей процедурного керування устаткованням порційного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 procedural_element;
 -> rrel_not_maximum_studied_object_class:
@@ -66,7 +66,7 @@ unit_procedure
 => nrel_idtf:
 	[технологический процесс]
 	(* <- lang_ru;; *);
-	[technological process]
+	[process]
 	(* <- lang_en;; *);
 	[технологічний процес]
 	(* <- lang_uk;; *);
@@ -146,7 +146,7 @@ recipe_procedural_element
 	(* <- lang_ru;; *);
 	[recipe procedural element]
 	(* <- lang_en;; *);
-	[процедурний елемент рецепта]
+	[рецептурний процедурний елемент]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
