@@ -375,7 +375,7 @@ procedure_finishing_text
 	(* <- lang_ru;; *);
 	[image of the end of the procedure]
 	(* <- lang_en;; *);
-	[Зображення кінця процедури]
+	[зображення кінця процедури]
 	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/procedure_finishing_text.png";

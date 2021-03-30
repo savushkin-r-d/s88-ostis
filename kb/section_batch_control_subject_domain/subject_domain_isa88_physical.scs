@@ -3,7 +3,7 @@ subject_domain_isa88_physical
 => nrel_main_idtf: 
 	[Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
  	[Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
-	[Предметна область фізичних моделей рецептурного виробництва] (* <- lang_uk;; *);
+	[Предметна область фізичних моделей порційного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class: equipment_entity;
 -> rrel_not_maximum_studied_object_class:
 process_cell; 
