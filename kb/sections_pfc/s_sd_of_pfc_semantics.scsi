@@ -1261,16 +1261,6 @@ leavening
 	[заквашування]
 	(* <- lang_uk;; *);;
 
-/*sc_node_not_relation -> souring;;
-souring
-=> nrel_main_idtf:
-	[сквашивание]
-	(* <- lang_ru;; *);
-	[souring]
-	(* <- lang_en;; *);
-	[сквашивание]
-	(* <- lang_uk;; *);;*/
-
 sc_node_not_relation -> cutting;;
 cutting
 => nrel_main_idtf:

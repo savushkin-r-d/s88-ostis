@@ -597,8 +597,6 @@ implisit_transition_text
 	(* <- lang_en;; *);
 	[зображення неявного переходу]
 	(* <- lang_uk;; *);
-=> nrel_idtf:
-	"file://images/implisit_transition_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
