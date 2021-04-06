@@ -134,42 +134,4 @@ process_action
 		*);;
 	*);;
 
-nrel_process_element_link
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[связь элементов процесса*]
-	(* <- lang_ru;; *);
-	[process element link*]
-	(* <- lang_en;; *);
-	[зв'язок елементів процесу*]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example:
-				"file://content_html/explanation_for_nrel_process_element_link_ru.html"
-			(* <- lang_ru;;	*);
-				"file://content_html/explanation_for_nrel_process_element_link_en.html"
-			(* <- lang_en;; *);
-				"file://content_html/explanation_for_nrel_process_element_link_uk.html"
-			(* <- lang_uk;; *);;
-		*);;
-	*);
-=> nrel_first_domain: nrel_second_domain: process_element;
-=> nrel_definitional_domain: process_element;;
 
-2 <= nrel_measurement: ...
-(*
-	<- sc_node_not_relation;;
-	-> nrel_process_element_link;;
-	<- arity;;
-*);;
-
-oriented_relation -> nrel_process_element_link;;
-reflexive_relation -|> nrel_process_element_link;;
-transitive_relation -|> nrel_process_element_link;;
-antisymmetric_relation -> nrel_process_element_link;;
