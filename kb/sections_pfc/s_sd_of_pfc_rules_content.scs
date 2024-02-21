@@ -1,3 +1,4 @@
+s_sd_of_pfc_rules =  [*
 sd_of_pfc_rules 
 => nrel_main_idtf:
 	[Предметная область правил языка PFC]
@@ -52,3 +53,5 @@ sc_node_norole_relation -> nrel_mapping;;
 sc_node_norole_relation -> nrel_isomorphic;;
 
 
+
+*];;
