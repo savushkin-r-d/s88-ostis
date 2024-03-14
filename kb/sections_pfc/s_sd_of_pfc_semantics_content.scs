@@ -1,3 +1,4 @@
+s_sd_of_pfc_semantics =  [*
 sd_of_pfc_semantics
 => nrel_main_idtf:
 	[Предметная область семантики языка PFC]
@@ -1290,3 +1291,5 @@ readiness_for_delivery
 	(* <- lang_en;; *);
 	[готове до видання]
 	(* <- lang_uk;; *);;
+
+*];;

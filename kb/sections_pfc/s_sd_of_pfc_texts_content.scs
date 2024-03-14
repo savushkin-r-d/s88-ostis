@@ -1,3 +1,4 @@
+s_sd_of_pfc_texts =  [*
 sd_of_pfc_texts
 => nrel_main_idtf:
 	[Предметная область текстов языка PFC]
@@ -757,3 +758,5 @@ oriented_relation -> text_signature;;
 reflexive_relation -|> text_signature;;
 transitive_relation -|> text_signature;;
 symmetric_relation -|> text_signature;;
+
+*];;

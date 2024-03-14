@@ -16,6 +16,5 @@ s_sd_of_pfc_semantics
 	(* <- lang_uk;; *);
 
 <- not_enough_formed_structure;;
-s_sd_of_pfc_semantics = [*^"file://s_sd_of_pfc_semantics.scsi"*];;
 
 rrel_key_sc_element -> (s_sd_of_pfc_semantics -> sd_of_pfc_semantics);;

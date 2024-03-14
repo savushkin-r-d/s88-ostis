@@ -15,6 +15,5 @@ s_sd_of_pfc_rules
 	(* <- lang_uk;; *);
 
 <- not_enough_formed_structure;;
-s_sd_of_pfc_rules = [*^"file://s_sd_of_pfc_rules.scsi"*];;
 
 rrel_key_sc_element -> (s_sd_of_pfc_rules -> sd_of_pfc_rules);;
