@@ -657,15 +657,15 @@ nrel_pfc_relation
 		(*
 		-> rrel_example:
 			"file://content_html/explanation_for_nrel_pfc_relation_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_pfc_relation_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_pfc_relation_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 
 		*);;
 	*);
@@ -705,15 +705,15 @@ nrel_order_of_execution
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 => nrel_first_domain: nrel_second_domain: pfc_element;
@@ -750,15 +750,15 @@ nrel_synchronization_element_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 
 		*);;
 	*);
@@ -793,15 +793,15 @@ nrel_one_way_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 		*);;
 	*);
 => nrel_first_domain: nrel_second_domain: synchronization_element;
@@ -835,15 +835,15 @@ nrel_two_way_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 			
 		*);;
 	*);
@@ -878,15 +878,15 @@ nrel_transition_condition
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 2 <= nrel_measurement: ...
@@ -905,16 +905,16 @@ nrel_explicit_transition
 => nrel_main_idtf:
 	[явный переход*]
 	(* <- lang_ru;; *);
-	[explicit transition]
+	[explicit transition*]
 	(* <- lang_en;; *);
-	[явний перехід]
+	[явний перехід*]
 	(* <- lang_uk;; *);
 => nrel_idtf:
 	[условный переход*]
 	(* <- lang_ru;; *);
-	[conditional transition]
+	[conditional transition*]
 	(* <- lang_en;; *);
-	[умовний перехід]
+	[умовний перехід*]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -925,15 +925,15 @@ nrel_explicit_transition
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 		
 		*);;
 	*);
@@ -955,9 +955,9 @@ nrel_implisit_transition
 => nrel_main_idtf:
 	[неявный переход*]
 	(* <- lang_ru;; *);
-	[implicit transition]
+	[implicit transition*]
 	(* <- lang_en;; *);
-	[неявний перехід]
+	[неявний перехід*]
 	(* <- lang_uk;; *);
 	
 => nrel_idtf:
@@ -965,7 +965,7 @@ nrel_implisit_transition
 	(* <- lang_ru;; *);
 	[unconditional transition*]
 	(* <- lang_en;; *);
-	[безумовний перехід]
+	[безумовний перехід*]
 	(* <- lang_uk;; *);
 
 <- rrel_key_sc_element:
@@ -977,15 +977,15 @@ nrel_implisit_transition
 		(*
 		-> rrel_example:
 			"file://content_html/explanation_for_nrel_implisit_transition_ru.html"
-			(* <- lang_ru;; => nrel_format: format_html;; *);;
+			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_implisit_transition_en.html"
-			(* <- lang_en;; => nrel_format: format_html;; *);;
+			(* <- lang_en;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_implisit_transition_uk.html"
-			(* <- lang_uk;; => nrel_format: format_html;; *);;
+			(* <- lang_uk;; *);;
 		
 		*);;
 	*);
@@ -1185,10 +1185,6 @@ mixing
 sc_node_not_relation -> temperature;;
 temperature
 => nrel_main_idtf:
-	[температура]
-	(* <- lang_ru;; *);
-	[temperature]
-	(* <- lang_en;; *);
 	[температура]
 	(* <- lang_uk;; *);;
 
