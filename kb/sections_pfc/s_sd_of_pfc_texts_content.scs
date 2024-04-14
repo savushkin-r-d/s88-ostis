@@ -119,7 +119,7 @@ allocation_element_text
 	[зображення елемента надання ресурсу]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/allocation_element_text.png" (* => nrel_format: format_png;; *);
+	"file://images/allocation_element_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -179,7 +179,7 @@ synchronization_element_text
 	[зображення елемента синхронізації]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/synchronization_element_text.png" (* => nrel_format: format_png;; *);
+	"file://images/synchronization_element_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -281,7 +281,7 @@ procedure_starting_text
 	[зображення початку процедури]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/starting_procedure_text.png" (* => nrel_format: format_png;; *);
+	"file://images/starting_procedure_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -313,7 +313,7 @@ starting_of_sequence_execution_choice_text
 	[зображення початку вибору послідовності виконання]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/starting_of_sequence_execution_choice_text.png" (* => nrel_format: format_png;; *);
+	"file://images/starting_of_sequence_execution_choice_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -347,7 +347,7 @@ starting_of_parallel_sequence_execution_text
 	[зображення початку паралельного виконання послідовності]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/starting_of_parallel_sequence_execution_text.png" (* => nrel_format: format_png;; *);
+	"file://images/starting_of_parallel_sequence_execution_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -379,7 +379,7 @@ procedure_finishing_text
 	[зображення кінця процедури]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/procedure_finishing_text.png" (* => nrel_format: format_png;; *);
+	"file://images/procedure_finishing_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -411,7 +411,7 @@ finishing_of_parallel_sequence_execution_text
 	[зображення кінця паралельного виконання послідовності]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/finishing_of_parallel_sequence_execution_text.png" (* => nrel_format: format_png;; *);
+	"file://images/finishing_of_parallel_sequence_execution_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -441,7 +441,7 @@ finishing_of_sequence_execution_choice_text
 	[зображення кінця вибору послідовності виконання]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/finishing_of_sequence_execution_choice_text.png" (* => nrel_format: format_png;; *);
+	"file://images/finishing_of_sequence_execution_choice_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -473,7 +473,7 @@ phase_text
 	[зображення етапу]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/phase_text.png" (* => nrel_format: format_png;; *);
+	"file://images/phase_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -503,7 +503,7 @@ operation_text
 	[зображення операції]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/operation_text.png" (* => nrel_format: format_png;; *);
+	"file://images/operation_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -535,7 +535,7 @@ unit_procedure_text
 	[зображення процедури технологічної установки]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/unit_procedure_text.png" (* => nrel_format: format_png;; *);
+	"file://images/unit_procedure_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -567,7 +567,7 @@ procedure_text
 	[зображення процедури]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/procedure_text.png" (* => nrel_format: format_png;; *);
+	"file://images/procedure_text.png";
 <- rrel_key_sc_element:
 	...
 	(*
@@ -629,7 +629,7 @@ explicit_transition_text
 	[зображення явного переходу]
 	(* <- lang_uk;; *);
 => nrel_idtf:
-	"file://images/explicit_transition_text.png" (* => nrel_format: format_png;; *);
+	"file://images/explicit_transition_text.png";
 <- rrel_key_sc_element:
 	...
 	(*

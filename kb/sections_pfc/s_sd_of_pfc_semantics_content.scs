@@ -657,15 +657,15 @@ nrel_pfc_relation
 		(*
 		-> rrel_example:
 			"file://content_html/explanation_for_nrel_pfc_relation_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_pfc_relation_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_pfc_relation_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 
 		*);;
 	*);
@@ -705,15 +705,15 @@ nrel_order_of_execution
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_order_of_execution_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 		*);;
 	*);
 => nrel_first_domain: nrel_second_domain: pfc_element;
@@ -750,15 +750,15 @@ nrel_synchronization_element_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_synchronization_element_link_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 
 		*);;
 	*);
@@ -793,15 +793,15 @@ nrel_one_way_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_one_way_link_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 		*);;
 	*);
 => nrel_first_domain: nrel_second_domain: synchronization_element;
@@ -835,15 +835,15 @@ nrel_two_way_link
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_two_way_link_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 			
 		*);;
 	*);
@@ -878,15 +878,15 @@ nrel_transition_condition
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_transition_condition_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 		*);;
 	*);;
 2 <= nrel_measurement: ...
@@ -905,16 +905,16 @@ nrel_explicit_transition
 => nrel_main_idtf:
 	[явный переход*]
 	(* <- lang_ru;; *);
-	[explicit transition*]
+	[explicit transition]
 	(* <- lang_en;; *);
-	[явний перехід*]
+	[явний перехід]
 	(* <- lang_uk;; *);
 => nrel_idtf:
 	[условный переход*]
 	(* <- lang_ru;; *);
-	[conditional transition*]
+	[conditional transition]
 	(* <- lang_en;; *);
-	[умовний перехід*]
+	[умовний перехід]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -925,15 +925,15 @@ nrel_explicit_transition
 		(*
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_explicit_transition_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 		
 		*);;
 	*);
@@ -955,9 +955,9 @@ nrel_implisit_transition
 => nrel_main_idtf:
 	[неявный переход*]
 	(* <- lang_ru;; *);
-	[implicit transition*]
+	[implicit transition]
 	(* <- lang_en;; *);
-	[неявний перехід*]
+	[неявний перехід]
 	(* <- lang_uk;; *);
 	
 => nrel_idtf:
@@ -965,7 +965,7 @@ nrel_implisit_transition
 	(* <- lang_ru;; *);
 	[unconditional transition*]
 	(* <- lang_en;; *);
-	[безумовний перехід*]
+	[безумовний перехід]
 	(* <- lang_uk;; *);
 
 <- rrel_key_sc_element:
@@ -977,15 +977,15 @@ nrel_implisit_transition
 		(*
 		-> rrel_example:
 			"file://content_html/explanation_for_nrel_implisit_transition_ru.html"
-			(* <- lang_ru;; *);;
+			(* <- lang_ru;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_implisit_transition_en.html"
-			(* <- lang_en;; *);;
+			(* <- lang_en;; => nrel_format: format_html;; *);;
 
 		-> rrel_example: 
 			"file://content_html/explanation_for_nrel_implisit_transition_uk.html"
-			(* <- lang_uk;; *);;
+			(* <- lang_uk;; => nrel_format: format_html;; *);;
 		
 		*);;
 	*);
@@ -1020,25 +1020,7 @@ preparation_of_milk_mixture
 	[preparation of milk mixture]
 	(* <- lang_en;; *);
 	[приготування молочної суміші]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Приготовление молочной смеси - процесс, основанный на последовательном применении определенных операций и технологических этапов для создания гомогенного продукта из ингредиентов, включающих молоко и дополнительные компоненты.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Preparation of infant formula is a process based on the sequential application of certain operations and technological processes to produce a homogeneous product from ingredients including milk and additional components.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Приготування молочної суміші - процес, заснований на послідовному застосуванні певних операцій та технологічних процесів для виробництва гомогенного продукту з інгредієнтів, що включають молоко та додаткові компоненти.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> preparation_of_curd_mass;;
 preparation_of_curd_mass
@@ -1048,25 +1030,7 @@ preparation_of_curd_mass
 	[preparation of curd mass]
 	(* <- lang_en;; *);
 	[приготування сирної маси]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Приготовление творожной массы - процесс комбинирования свежего творога с другими ингредиентами, такими как сахар, масло, фрукты или ягоды, с целью создания однородной и гладкой текстуры. Основные шаги включают в себя измельчение творога, добавление и перемешивание других ингредиентов, при необходимости нагревание смеси для достижения определенной консистенции.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Curd making is the process of combining fresh curd with other ingredients such as sugar, butter, fruits or berries to create a uniform and smooth texture. Basic steps include grinding the curd, adding and mixing other ingredients, and heating the mixture if necessary to achieve a specific consistency.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Приготування сирної маси - процес комбінування свіжого сиру з іншими інгредієнтами, такими як цукор, олія, фрукти або ягоди з метою створення однорідної та гладкої текстури. Основні кроки включають подрібнення сиру, додавання і перемішування інших інгредієнтів, при необхідності нагрівання суміші для досягнення певної консистенції.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> forming_of_curd_mass;;
 forming_of_curd_mass
@@ -1076,25 +1040,7 @@ forming_of_curd_mass
 	[forming of curd mass]
 	(* <- lang_en;; *);
 	[формування сирної маси ]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Формовка творожной массы - процесс создания определенной формы или конфигурации из творожной массы путем использования специальных форм, прессов или других устройств. Этот процесс включает в себя сжатие и/или моделирование творожной массы с целью придания ей определенной формы, размера и текстуры в соответствии с требованиями производства или рецептуры.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Curd molding is the process of creating a specific shape or configuration from the curd mass by using special molds, presses or other devices. This process involves compressing and/or modeling the curd mass to give it a specific shape, size and texture in accordance with production or formulation requirements.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Формування сирної маси - процес створення певної форми або конфігурації сирної маси шляхом використання спеціальних форм, пресів або інших пристроїв. Цей процес включає стиснення та/або моделювання сирної маси з метою надання їй певної форми, розміру і текстури відповідно до вимог виробництва або рецептури.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 		
 sc_node_not_relation -> filling_the_curd_mass;;
 filling_the_curd_mass
@@ -1104,25 +1050,7 @@ filling_the_curd_mass
 	[filling the curd mass]
 	(* <- lang_en;; *);
 	[фасування сирної маси]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Фасовка творожной массы - процесс разделения творожной массы на определенные порции или упаковки с использованием специализированного оборудования или устройств. Этот процесс включает в себя дозирование, наполнение и упаковку творожной массы в соответствии с заданными параметрами, такими как вес, объем или форма упаковки. Фасовка творожной массы может проводиться как автоматически, так и вручную в зависимости от производственных потребностей и требуемой производительности.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Packaging of curd mass is the process of dividing the curd mass into specific portions or packaging using specialized equipment or devices. This process involves dosing, filling and packaging the curd mass according to specified parameters such as weight, volume or package shape. Packing of curd mass can be carried out either automatically or manually, depending on production needs and required productivity.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Фасування сирної маси - процес поділу сирної маси на певні порції або пакування з використанням спеціалізованого обладнання чи пристроїв. Цей процес включає дозування, наповнення та упаковку сирної маси відповідно до заданих параметрів, таких як вага, об'єм або форма упаковки. Фасування сирної маси може проводитися як автоматично, так і вручну в залежності від виробничих потреб та необхідної продуктивності.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> recipe_procedure_preparation_curd_mass;;
 recipe_procedure_preparation_curd_mass
@@ -1142,25 +1070,7 @@ selection_of_equipment
 	[selection of equipment]
 	(* <- lang_en;; *);
 	[вибір устатковання]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Выбор оборудования - процесс систематического анализа и оценки различных технических характеристик, параметров и функциональных возможностей оборудования с целью определения наиболее подходящего и эффективного варианта для конкретных производственных задач или потребностей.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Equipment selection is the process of systematically analyzing and evaluating various technical characteristics, parameters and functionality of equipment in order to determine the most suitable and effective option for specific production tasks or needs.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Вибір обладнання - процес систематичного аналізу та оцінки різних технічних характеристик, параметрів та функціональних можливостей обладнання з метою визначення найбільш відповідного та ефективного варіанту для конкретних виробничих завдань чи потреб.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> supply_line;;
 supply_line
@@ -1170,25 +1080,7 @@ supply_line
 	[supply line]
 	(* <- lang_en;; *);
 	[лінія подачі]
-	(* <- lang_uk;; *);
-<- rrel_key_sc_element:
-	...
-	(*
-		<- explanation;;
-		<= nrel_sc_text_translation: 
-		...
-		(*
-		-> rrel_example: 
-			[Линия подачи - система, предназначенное для передачи материалов, компонентов или продуктов на производственной линии или в рабочем процессе. Линия подачи обеспечивает непрерывное перемещение объектов от одного участка производства к другому.]
-			(* <- lang_ru;; *);;
-			-> rrel_example: 
-			[Feed line is a system designed to transfer materials, components or products along a production line or work process. The feed line ensures the continuous movement of objects from one production area to another.]
-			(* <- lang_en;; *);;
-			-> rrel_example: 
-			[Лінія подачі - система, призначене передачі матеріалів, компонентів чи продуктів на виробничої лінії чи робочому процесі. Лінія подачі забезпечує безперервне переміщення об'єктів від однієї ділянки виробництва до іншої.]
-			(* <- lang_uk;; *);;
-		*);;
-	*);;
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> coagulator;;
 coagulator
@@ -1293,6 +1185,10 @@ mixing
 sc_node_not_relation -> temperature;;
 temperature
 => nrel_main_idtf:
+	[температура]
+	(* <- lang_ru;; *);
+	[temperature]
+	(* <- lang_en;; *);
 	[температура]
 	(* <- lang_uk;; *);;
 
