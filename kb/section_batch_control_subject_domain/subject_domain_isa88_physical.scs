@@ -27,7 +27,7 @@ equipment_entity
 => nrel_main_idtf:
 	[объект оборудования]
 	(* <- lang_ru;; *);
-	[equipment_entity]
+	[equipment entity]
 	(* <- lang_en;; *);
 	[апаратурний об’єкт]
 	(* <- lang_uk;; *);
