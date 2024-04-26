@@ -1,0 +1,6 @@
+subject_domain_isa88_functional_description_recipes
+<- sc_node_struct;
+=> nrel_main_idtf: 
+	[Предметная область функционального описания рецептов] (* <- lang_ru;; *);
+ 	[Subject domain of ​​the functional description of recipes] (* <- lang_en;; *);
+	[Предметна область функціонального опису рецептів] (* <- lang_uk;; *);;
