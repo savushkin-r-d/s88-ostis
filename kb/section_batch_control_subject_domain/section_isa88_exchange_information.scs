@@ -1,0 +1,929 @@
+section_isa88_exchange_information
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область обмена информацией]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of information exchange]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область обміну інформацією]
+	(* <- lang_uk;; *);
+	[Kapitel. Themengebiet der Austausch von Informationen]
+	(* <- lang_de;; *);
+<= nrel_section_decomposition: {
+section_isa88_exchange_information_bxt
+(* => nrel_section_base_order: section_isa88_exchange_information_bxt_table;; *);
+section_isa88_exchange_information_bxt_table
+(* => nrel_section_base_order: section_isa88_exchange_information_bxt_enumeration_set;; *);
+section_isa88_exchange_information_bxt_enumeration_set
+(* => nrel_section_base_order: section_isa88_exchange_information_bxt_enumeration;; *);
+section_isa88_exchange_information_bxt_enumeration
+};;
+
+section_isa88_exchange_information_bxt
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область обмена информацией BXT]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​information exchange BXT]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область обміну інформацією BXT]
+	(* <- lang_uk;; *);
+	[Kapitel. Themenbereich der Austausch von Informationen]
+	(* <- lang_de;; *);
+-> rrel_maximum_studied_object_class:
+information_exchange;
+-> rrel_not_maximum_studied_object_class:
+exchange_id;
+exchange_value;;
+
+exchange_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идентификатор обмена]
+	(* <- lang_ru;; *);
+	[exchange-ID]
+	(* <- lang_en;; *);
+	[Ідентифікатор обміну]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Идентифицирует элемент обмена.]
+	(* <- lang_ru;; *);
+	[Identifies the exchange element.]
+	(* <- lang_en;; *);
+	[Ідентифікує елемент обміну.]
+	(* <- lang_uk;; *);;
+	
+exchange_value
+=> nrel_main_idtf:
+	[значение обмена]
+	(* <- lang_ru;; *);
+	[exchange value]
+	(* <- lang_en;; *);
+	[значення обміну]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет ценность обмениваемой информации.]
+	(* <- lang_ru;; *);
+	[Identifies the value for the exchanged information.]
+	(* <- lang_en;; *);
+	[Визначає цінність обмінюваної інформації.]
+	(* <- lang_uk;; *);;
+	
+section_isa88_exchange_information_bxt_table
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область информационного обмена содержимым таблицы BXT.]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​information exchange BXT table contents.]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область інформаційного обміну вмістом таблиць BXT.]
+	(* <- lang_uk;; *);
+	[Kapitel. Themenbereich Inhalt der BXT-Tabelle zum Informationsaustausch.]
+	(* <- lang_de;; *);
+-> rrel_maximum_studied_object_class:
+information_exchange;
+-> rrel_not_maximum_studied_object_class:
+schema;
+delimiter;
+tool_id;
+tool_version;
+tool_schema;;
+
+schema
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[схема]
+	(* <- lang_ru;; *);
+	[schema]
+	(* <- lang_en;; *);
+	[схема]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Идентифицирует элемент обмена.]
+	(* <- lang_ru;; *);
+	[Identifies the exchange element.]
+	(* <- lang_en;; *);
+	[Ідентифікує елемент обміну.]
+	(* <- lang_uk;; *);;
+	
+delimiter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[разделитель]
+	(* <- lang_ru;; *);
+	[delimeter]
+	(* <- lang_en;; *);
+	[роздільник]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Символ, который используется для различения имен элементов в
+Иерархическое имя элемента рецепта.]
+	(* <- lang_ru;; *);
+	[The character that is used to differentiate between the element names in the
+recipe element hierarchical name.]
+	(* <- lang_en;; *);
+	[Символ, який використовується для розрізнення імен елементів у
+ієрархічна назва елемента рецепта.]
+	(* <- lang_uk;; *);;
+	
+tool_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идентификатор инструмента]
+	(* <- lang_ru;; *);
+	[tool ID]
+	(* <- lang_en;; *);
+	[ідентифікатор інструменту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Идентификатор инструмента, создавшего таблицы обмена.]
+	(* <- lang_ru;; *);
+	[The identification of the tool that created the exchange tables.]
+	(* <- lang_en;; *);
+	[Ідентифікатар інструмента, який створив таблиці обміну.]
+	(* <- lang_uk;; *);;
+	
+tool_version
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[версия инструмента]
+	(* <- lang_ru;; *);
+	[tool version]
+	(* <- lang_en;; *);
+	[версія інструменту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Версия инструмента, создавшего таблицы обмена.]
+	(* <- lang_ru;; *);
+	[The version of the tool that created the exchange tables.]
+	(* <- lang_en;; *);
+	[Версія інструмента, який створив таблиці обміну.]
+	(* <- lang_uk;; *);;
+	
+tool_schema
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[схема инструмента]
+	(* <- lang_ru;; *);
+	[tool schema]
+	(* <- lang_en;; *);
+	[схема інструменту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Настраиваемая версия схемы, созданная с помощью инструмента.]
+	(* <- lang_ru;; *);
+	[The customized schema version created by the tool.]
+	(* <- lang_en;; *);
+	[Налаштована версія схеми, створена інструментом.]
+	(* <- lang_uk;; *);;
+	
+section_isa88_exchange_information_bxt_enumeration_set
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область информационного обмена BXT набором перечислений.]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​information exchange BXT enumeration set.]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область інформаційного обміну BXT набором перерахувань.]
+	(* <- lang_uk;; *);
+	[Kapitel. Themenbereich Inhalt der BXT-Enum-Set.]
+	(* <- lang_de;; *);
+-> rrel_maximum_studied_object_class:
+information_exchange;
+-> rrel_not_maximum_studied_object_class:
+enum_set;
+description;;
+	
+description
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[описание]
+	(* <- lang_ru;; *);
+	[description]
+	(* <- lang_en;; *);
+	[опис]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Содержит использование набора перечислений.]
+	(* <- lang_ru;; *);
+	[Contains the use of the enumeration set.]
+	(* <- lang_en;; *);
+	[Содержит використання набору перечислень.]
+	(* <- lang_uk;; *);;
+	
+enum_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[перечисления]
+	(* <- lang_ru;; *);
+	[enum set]
+	(* <- lang_en;; *);
+	[перерахування]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет стандартный набор перечислений.]
+	(* <- lang_ru;; *);
+	[Identifies the standard enumeration set.]
+	(* <- lang_en;; *);
+	[Визначає стандартний набір перерахувань.]
+	(* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+boolean;
+direction_type;
+equipment_level;
+equipment_type;
+evaluation_rule;
+formula_type;
+formula_sub_type;
+link_depiction;
+link_to_type;  
+link_type;
+re_type;
+re_use;
+recipe_status;
+record_set;
+record_set_control_recipe;
+record_set_master_recipe;
+record_set_execution_info;
+record_set_material_info;
+record_set_continuous_data;
+record_set_events;
+record_set_operator_change;
+record_set_operator_comment;
+record_set_analysis_data;
+record_set_late_record;
+record_set_recipe_data;
+record_set_recipe_specified;
+record_set_summary_data;
+schedule_action;
+schedule_mode;  
+schedule_status;
+se_type;
+value_data_types;
+value_type;;
+
+boolean
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[логический]
+	(* <- lang_ru;; *);
+	[boolean]
+	(* <- lang_en;; *);
+	[логічний]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет набор логических значений.]
+	(* <- lang_ru;; *);
+	[Defines a set of Boolean values.]
+	(* <- lang_en;; *);
+	[Визначає набір логічних значень.]
+	(* <- lang_uk;; *);;
+	
+direction_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип направления]
+	(* <- lang_ru;; *);
+	[direction type]
+	(* <- lang_en;; *);
+	[тип напряму]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, как предполагается обрабатывать параметр.]
+	(* <- lang_ru;; *);
+	[Defines how a parameter is intended to be handled.]
+	(* <- lang_en;; *);
+	[Визначає, як передбачається обробляти параметр.]
+	(* <- lang_uk;; *);;
+	
+equipment_level
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уровень обарудования]
+	(* <- lang_ru;; *);
+	[equipment level]
+	(* <- lang_en;; *);
+	[рівень обладнання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет иерархический уровень оборудования для элементов оборудования.]
+	(* <- lang_ru;; *);
+	[Defines the equipment hierarchical level for equipment elements.]
+	(* <- lang_en;; *);
+	[Визначає ієрархічний рівень обладнання для елементів обладнання.]
+	(* <- lang_uk;; *);;
+	
+equipment_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип обарудования]
+	(* <- lang_ru;; *);
+	[equipment type]
+	(* <- lang_en;; *);
+	[тип обладнання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет тип записи оборудования для элементов оборудования.]
+	(* <- lang_ru;; *);
+	[Defines the type of equipment record for equipment elements.]
+	(* <- lang_en;; *);
+	[Визначає тип запису обладнання елементів обладнання.]
+	(* <- lang_uk;; *);;
+	
+evaluation_rule
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[правило вычисления]
+	(* <- lang_ru;; *);
+	[evaluation rule]
+	(* <- lang_en;; *);
+	[тип обладнання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет правила оценки свойств оборудования.]
+	(* <- lang_ru;; *);
+	[Defines the evaluation rules for equipment properties.]
+	(* <- lang_en;; *);
+	[Визначає правила оцінки властивостей обладнання.]
+	(* <- lang_uk;; *);;
+	
+formula_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип формулы]
+	(* <- lang_ru;; *);
+	[formula type]
+	(* <- lang_en;; *);
+	[тип формули]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет типы рецептурных формул.]
+	(* <- lang_ru;; *);
+	[Defines the recipe formula types.]
+	(* <- lang_en;; *);
+	[Визначає типи рецептурних формул.]
+	(* <- lang_uk;; *);;
+	
+formula_sub_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подтип формулы]
+	(* <- lang_ru;; *);
+	[formula sub type]
+	(* <- lang_en;; *);
+	[підтип формули]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет определения подтипов формул, предоставленные пользователем.]
+	(* <- lang_ru;; *);
+	[Specifies user-supplied formula sub type definitions.]
+	(* <- lang_en;; *);
+	[Визначає визначення підтипів формул, надані користувачем.]
+	(* <- lang_uk;; *);;
+	
+link_depiction
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[отображение связей]
+	(* <- lang_ru;; *);
+	[link depiction]
+	(* <- lang_en;; *);
+	[відображення зв'язків]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, как должны отображаться связи между элементами рецепта.]
+	(* <- lang_ru;; *);
+	[Defines how links between recipe elements are to be depicted.]
+	(* <- lang_en;; *);
+	[Визначає, як мають відображатись зв'язки між елементами рецепту.]
+	(* <- lang_uk;; *);;
+	
+link_to_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ссылка на тип]
+	(* <- lang_ru;; *);
+	[link to type]
+	(* <- lang_en;; *);
+	[ссылка на тип]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, ссылается ли ссылка на шаг или переход.]
+	(* <- lang_ru;; *);
+	[Defines if a link is referencing a step or transition.]
+	(* <- lang_en;; *);
+	[Визначає, чи посилається посилання на крок чи перехід.]
+	(* <- lang_uk;; *);;
+	
+link_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип ссылкu]
+	(* <- lang_ru;; *);
+	[link type]
+	(* <- lang_en;; *);
+	[тип ссылки]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет тип ссылки.]
+	(* <- lang_ru;; *);
+	[Defines the type of link.]
+	(* <- lang_en;; *);
+	[Визначає тип ссылки.]
+	(* <- lang_uk;; *);;
+	
+re_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип элемента рецепта]
+	(* <- lang_ru;; *);
+	[recipe element type]
+	(* <- lang_en;; *);
+	[тип елемента рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет элемент рецепта, либо уровень процедуры рецепта, либо
+символ распределения.]
+	(* <- lang_ru;; *);
+	[Defines the recipe element, either recipe procedure level or
+allocation symbol.]
+	(* <- lang_en;; *);
+	[Визначає елемент рецепту, або рівень процедури рецепту, або
+символ розподілу.]
+	(* <- lang_uk;; *);;
+	
+re_use
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[использование элемента рецепта]
+	(* <- lang_ru;; *);
+	[recipe element use]
+	(* <- lang_en;; *);
+	[використання елемента рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, как элемент рецепта используется в рецепте.]
+	(* <- lang_ru;; *);
+	[Defines how a recipe element is used in a recipe.]
+	(* <- lang_en;; *);
+	[Визначає, як елемент рецепту використовується у рецепті.]
+	(* <- lang_uk;; *);;
+	
+recipe_status
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[статус рецепта]
+	(* <- lang_ru;; *);
+	[recipe status]
+	(* <- lang_en;; *);
+	[статус рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определение возможного статуса рецепта.]
+	(* <- lang_ru;; *);
+	[Definition of the possible status of a recipe.]
+	(* <- lang_en;; *);
+	[Визначення можливого статусу рецепту.]
+	(* <- lang_uk;; *);;
+	
+record_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор записей]
+	(* <- lang_ru;; *);
+	[record set]
+	(* <- lang_en;; *);
+	[набір записів]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет набор перечислений, который используется для отнесения записи к
+категории информации об истории пакетов.]
+	(* <- lang_ru;; *);
+	[Defines the enumeration set that is used to classify a record into a
+category of batch history information.]
+	(* <- lang_en;; *);
+	[Визначає набір перерахувань, який використовується для віднесення запису до
+категорію інформації про історію пакетів.]
+	(* <- lang_uk;; *);;
+	
+record_set_control_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись набора контрольных рецептов]
+	(* <- lang_ru;; *);
+	[record set control recipe]
+	(* <- lang_en;; *);
+	[рецепт контролю набору записів]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категории
+контрольного рецепта.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+ControlRecipe.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+контрольний рецепт.]
+	(* <- lang_uk;; *);;
+	
+record_set_master_recipe
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись набора основных рецептов]
+	(* <- lang_ru;; *);
+	[record set master recipe]
+	(* <- lang_en;; *);
+	[запис набору основних рецептів]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категории
+основного рецепта.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+MasterRecipe.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+основний рецепт.]
+	(* <- lang_uk;; *);;
+	
+record_set_execution_info
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[информация о выполнении набора записей]
+	(* <- lang_ru;; *);
+	[record set execution info]
+	(* <- lang_en;; *);
+	[інформація про виконання набору записів]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей  по категории
+ExecutionInfo]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+ExecutionInfo.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+ExecutionInfo]
+	(* <- lang_uk;; *);;
+	
+record_set_material_info
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[информация о материале, установленном для записи]
+	(* <- lang_ru;; *);
+	[record set material info]
+	(* <- lang_en;; *);
+	[інформація про матеріал, встановлений для запису]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям MaterialInfo.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+MaterialInfo.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+MaterialInfo.]
+	(* <- lang_uk;; *);;
+	
+record_set_continuous_data
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор непрерывных данных для записи]
+	(* <- lang_ru;; *);
+	[record set continuous data]
+	(* <- lang_en;; *);
+	[набір безперервних даних для запису]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям ContinuousData.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+ContinuousData.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+ContinuousData.]
+	(* <- lang_uk;; *);;
+	
+record_set_events
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор записей событий]
+	(* <- lang_ru;; *);
+	[record set events]
+	(* <- lang_en;; *);
+	[набір записів подій]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям Events.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+Events.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+Events.]
+	(* <- lang_uk;; *);;	
+	
+record_set_operator_change
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор записей смены оператора]
+	(* <- lang_ru;; *);
+	[record set operator change]
+	(* <- lang_en;; *);
+	[набір записів зміни оператора]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям OperatorChange.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+OperatorChange.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+OperatorChange.]
+	(* <- lang_uk;; *);;
+
+record_set_operator_comment
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор записей коментария оператора]
+	(* <- lang_ru;; *);
+	[record set operator comment]
+	(* <- lang_en;; *);
+	[набір записів коментаря оператора]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям OperatorComment.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+OperatorComment.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+OperatorComment.]
+	(* <- lang_uk;; *);;
+	
+record_set_analysis_data
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[набор записей анализа данных]
+	(* <- lang_ru;; *);
+	[record set analysis data]
+	(* <- lang_en;; *);
+	[набір записів аналізу даних]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям AnalysisData.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+AnalysisData.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+AnalysisData.]
+	(* <- lang_uk;; *);;
+	
+record_set_late_record
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись, установленная с опозданием]
+	(* <- lang_ru;; *);
+	[record set late record]
+	(* <- lang_en;; *);
+	[запис, встановлений із запізненням]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям LateRecord.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+LateRecord.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+LateRecord.]
+	(* <- lang_uk;; *);;
+	
+record_set_recipe_data
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись с данными рецепта]
+	(* <- lang_ru;; *);
+	[record set recipe data]
+	(* <- lang_en;; *);
+	[запис з даними рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям RecipeData.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+RecipeData.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+RecipeData.]
+	(* <- lang_uk;; *);;
+	
+record_set_recipe_specified
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись указанного рецепта]
+	(* <- lang_ru;; *);
+	[record set recipe specified]
+	(* <- lang_en;; *);
+	[запис вказаного рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям RecipeSpecified.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+RecipeSpecified.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+RecipeSpecified.]
+	(* <- lang_uk;; *);;
+	
+record_set_summary_data
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись итоговых данных]
+	(* <- lang_ru;; *);
+	[record set summary data]
+	(* <- lang_en;; *);
+	[запис підсумкових даних]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает дальнейшую историю классификации записей по категориям SummaryData.]
+	(* <- lang_ru;; *);
+	[Provides further history record classification under the category of
+SummaryData.]
+	(* <- lang_en;; *);
+	[Забезпечує подальшу історію класифікації записів за категорією
+SummaryData.]
+	(* <- lang_uk;; *);;
+	
+schedule_action
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[планирование действия]
+	(* <- lang_ru;; *);
+	[schedule action]
+	(* <- lang_en;; *);
+	[планування дії]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет предполагаемое действие записи расписания.]
+	(* <- lang_ru;; *);
+	[Defines the intended action of the schedule record.]
+	(* <- lang_en;; *);
+	[Визначає передбачувану дію запису розкладу.]
+	(* <- lang_uk;; *);;
+	
+schedule_mode
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[режим расписания]
+	(* <- lang_ru;; *);
+	[schedule mode]
+	(* <- lang_en;; *);
+	[режим розкладу]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет режим, в котором запись расписания начинает выполняться.]
+	(* <- lang_ru;; *);
+	[Defines the mode in which the schedule record begins execution.]
+	(* <- lang_en;; *);
+	[Визначає режим, коли запис розкладу починає виконуватися.]
+	(* <- lang_uk;; *);;
+	
+schedule_status
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[статус расписания]
+	(* <- lang_ru;; *);
+	[schedule status]
+	(* <- lang_en;; *);
+	[статус розкладу]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет возможный статус расписания.]
+	(* <- lang_ru;; *);
+	[Defines the possible status of a schedule.]
+	(* <- lang_en;; *);
+	[Визначає можливий статус розкладу.]
+	(* <- lang_uk;; *);;
+	
+se_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип se]
+	(* <- lang_ru;; *);
+	[se type]
+	(* <- lang_en;; *);
+	[тип se]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет тип объекта в записи расписания.]
+	(* <- lang_ru;; *);
+	[Defines the possible status of a schedule.]
+	(* <- lang_en;; *);
+	[Визначає тип об'єкта запису розкладу.]
+	(* <- lang_uk;; *);;
+	
+value_data_types
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[типы данных значений]
+	(* <- lang_ru;; *);
+	[value data types]
+	(* <- lang_en;; *);
+	[типи даних значень]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет тип данных для связанного значения данных.]
+	(* <- lang_ru;; *);
+	[Defines the data type of an associated data value.]
+	(* <- lang_en;; *);
+	[Визначає тип даних пов'язаного значення даних.]
+	(* <- lang_uk;; *);;
+	
+value_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип значения]
+	(* <- lang_ru;; *);
+	[value type]
+	(* <- lang_en;; *);
+	[тип значення]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, как интерпретируется строка значений.]
+	(* <- lang_ru;; *);
+	[Defines how a value string is interpreted.]
+	(* <- lang_en;; *);
+	[Визначає, як інтерпретується рядок значень.]
+	(* <- lang_uk;; *);;
+	
+section_isa88_exchange_information_bxt_enumeration
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область информационного обмена BXT перечислений.]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​information exchange BXT enumeration.]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область інформаційного обміну BXT перерахувань.]
+	(* <- lang_uk;; *);
+	[Kapitel. Themenbereich Inhalt der BXT-Enum.]
+	(* <- lang_de;; *);
+-> rrel_maximum_studied_object_class:
+information_exchange;
+-> rrel_not_maximum_studied_object_class:
+enum_set;
+enum_value;
+enum_string;
+description;;
+
+enum_value
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[значение перечисления]
+	(* <- lang_ru;; *);
+	[enum value]
+	(* <- lang_en;; *);
+	[значення перерахування]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет числовое значение, связанное с элементом перечисления.]
+	(* <- lang_ru;; *);
+	[Specifies the numerical value associated with the enumeration member.]
+	(* <- lang_en;; *);
+	[Визначає числове значення, пов'язане із елементом перерахування.]
+	(* <- lang_uk;; *);;
+	
+enum_string
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[строка перечисления]
+	(* <- lang_ru;; *);
+	[enum string]
+	(* <- lang_en;; *);
+	[рядок перерахування]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет связанный текст для элемента перечисления.]
+	(* <- lang_ru;; *);
+	[Defines the associated text for the enumeration member.]
+	(* <- lang_en;; *);
+	[Визначає пов'язаний текст елемента перерахування.]
+	(* <- lang_uk;; *);;
+	
+information_exchange
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[информационный обмен]
+	(* <- lang_ru;; *);
+	[information exchange]
+	(* <- lang_en;; *);
+	[інформаційний обмін]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Процесс передачи данных между различными системами или устройствами с целью обеспечения обмена информацией и согласованности данных.]
+	(* <- lang_ru;; *);
+	[The process of transferring data between different systems or devices to ensure information exchange and data consistency.]
+	(* <- lang_en;; *);
+	[Процес передачі між різними системами чи пристроями з метою забезпечення обміну інформацією та узгодженості даних.]
+	(* <- lang_uk;; *);;
