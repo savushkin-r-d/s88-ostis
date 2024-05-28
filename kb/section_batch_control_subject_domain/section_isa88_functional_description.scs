@@ -15,6 +15,12 @@ section_isa88_functional_description_recipes
 section_isa88_functional_description_recipes_entity
 (* => nrel_section_base_order: section_isa88_functional_description_recipes_requirement;; *);
 section_isa88_functional_description_recipes_requirement
+(* => nrel_section_base_order: section_isa88_functional_description_batch_schedule;; *);
+section_isa88_functional_description_batch_schedule
+(* => nrel_section_base_order: section_isa88_functional_description_production_information;; *);
+section_isa88_functional_description_production_information
+(* => nrel_section_base_order: section_isa88_exchange_information;; *);
+section_isa88_exchange_information
 };;
 	
 section_isa88_functional_description_recipes
@@ -30,13 +36,13 @@ section_isa88_functional_description_recipes
 	(* <- lang_de;; *);
 -> rrel_maximum_studied_object_class:
 recipe_entity;
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 recipe;
 recipe_component;
 recipe_building_block;;
 
 recipe
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 recipe_id;
 recipe_version;
 version_date;
@@ -66,7 +72,7 @@ recipe_component
 	(* <- lang_en;; *);
 	[Сутність рецепту є частиною рецепту або будівельного блоку.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 level_class_equivalence;
 re_use_recipe;;
 	
@@ -89,7 +95,7 @@ and used when building recipes.]
 	[Сутність рецепту, що існує у бібліотеці. Будівельний блок можна налаштувати
 та використовується при створенні рецептів.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 recipe_version;
 version_date;
 approval_date;
@@ -255,7 +261,7 @@ creation of a master recipe.]
 	(* <- lang_en;; *);
 	[Вся технологічна рецептура, її компонент чи будівельний блок для створення майстер-рецепту.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 scale_reference;
 => nrel_summary:
 	[Определяет дату и время истечения срока действия этой версии рецепта.]
@@ -381,7 +387,7 @@ section_isa88_functional_description_recipes_entity
 	(* <- lang_de;; *);
 -> rrel_maximum_studied_object_class:
 recipe_entity;
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 general_recipe_entity;
 site_recipe_entity;
 master_recipe_entity;
@@ -403,7 +409,7 @@ general_recipe_entity
 	(* <- lang_en;; *);
 	[Вся інформація за загальним рецептом або рецептом сайту, компонент загального рецепту або рецепту сайту або блок для створення загального рецепту або рецепту сайту.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 scale_reference;;
 
 site_recipe_entity
@@ -423,7 +429,7 @@ of a site recipe.]
 	(* <- lang_en;; *);
 	[Весь рецепт сайту, компонент рецепту сайту чи будівельний блок для створення рецепту сайту.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 scale_reference;;
 
 master_recipe_entity
@@ -444,7 +450,7 @@ creation of a master recipe.]
 	(* <- lang_en;; *);
 	[Вся технологічна рецептура, її компонент чи будівельний блок для створення майстер-рецепту.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 scale_reference;
 process_cell_id;;
 
@@ -464,7 +470,7 @@ control_recipe_entity
 	(* <- lang_en;; *);
 	[Об'єкт рецепту, який повністю або частково є частиною рецепту, що управляє.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 batch_id;
 batch_size;
 information_status;;
@@ -533,7 +539,7 @@ section_isa88_functional_description_recipes_requirement
 	(* <- lang_de;; *);
 -> rrel_maximum_studied_object_class:
 selection_of_equipment;
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 equipment_requirement;
 equipment_procedural_element;
 equipment_entity;
@@ -568,7 +574,7 @@ equipment_procedural_element
 	(* <- lang_en;; *);
 	[Процедурний елемент, пов'язаний із частиною обладнання.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 equipment_procedural_element_id;
 recipe_version;
 version_date;
@@ -612,7 +618,7 @@ control functions.]
 елемент керування, згрупований для виконання певної функції керування або набору
 функції керування.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 equipment_endtity_id;
 equipment_level;
 mode;
@@ -671,7 +677,7 @@ properties are application specific.]
 	[Ідентифікує властивість, яку надає об'єкт чи клас обладнання. Ці
 властивості залежать від програми.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 property_id;
 value;
 value_range;
@@ -747,7 +753,7 @@ equipment_property_type
 	(* <- lang_uk;; *);;
 	
 equipment_relation
-<- sc_not_relation;
+<- sc_node_not_relation;
 => nrel_summary:
 	[Представление связей между оборудованием, но также может использоваться для представления других видов отношений между оборудованием.]
 	(* <- lang_ru;; *);
@@ -755,7 +761,7 @@ equipment_relation
 	(* <- lang_en;; *);
 	[Уявлення про зв'язки між обладнанням, але також може використовуватися для подання інших видів відносин між обладнанням.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 relation_id;;
 
 relation_id
@@ -776,7 +782,7 @@ relation_id
 	(* <- lang_uk;; *);;
 	
 equipment_class
-<- sc_not_relation;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[класс оборудования]
 	(* <- lang_ru;; *);
@@ -791,7 +797,7 @@ equipment_class
 	(* <- lang_en;; *);
 	[Клас об'єкту обладнання.]
 	(* <- lang_uk;; *);
--> rrel_not_maximum_studied_object_class:
+=> nrel_inclusion:
 equipment_class_id;
 equipment_level;;
 
@@ -811,3 +817,671 @@ relation_id
 	(* <- lang_en;; *);
 	[Забезпечує унікальну ідентифікацію.]
 	(* <- lang_uk;; *);;
+	
+recipe_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[функция рецепта]
+	(* <- lang_ru;; *);
+	[recipe function]
+	(* <- lang_en;; *);
+	[функція рецепту]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет, как выполняется сущность рецепта.]
+	(* <- lang_ru;; *);
+	[Defines how the recipe entity is executed.]
+	(* <- lang_en;; *);
+	[Визначає, як виконується суть рецепту.]
+	(* <- lang_uk;; *);;
+	
+equipment_class_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идентификатор класса оборудования]
+	(* <- lang_ru;; *);
+	[equipment class id]
+	(* <- lang_en;; *);
+	[ідентифікатор класу обладнання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Идентифицирует элемент оборудования, который может быть связан с записью.]
+	(* <- lang_ru;; *);
+	[Identifies an equipment element that may be associated with the entry.]
+	(* <- lang_en;; *);
+	[Ідентифікує елемент обладнання, який може бути пов'язаний із записом.]
+	(* <- lang_uk;; *);;
+	
+section_isa88_functional_description_batch_schedule
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область функционального описания плана произодства партии]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​functional description batch schedule]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область функціонального опису плана виробництва партії]
+	(* <- lang_uk;; *);
+	[Kapitel. Themengebiet der Funktionsbeschreibung des Chargenplan]
+	(* <- lang_de;; *);
+-> rrel_not_maximum_studied_object_class:
+batch_schedule_entry;
+schedule_parameter;
+schedule_relation;;
+
+
+batch_schedule_entry
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[запись пакетного расписания]
+	(* <- lang_ru;; *);
+	[batch schedule entry]
+	(* <- lang_en;; *);
+	[введення розкладу партії]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Запланированный элемент, который представляет собой единичную процедуру в партии, полную партию или набор партий (например: кампанию).]
+	(* <- lang_ru;; *);
+	[A scheduled item that represents a unit procedure in a batch, a complete batch, or a set of batches (e.g., a campaign).]
+	(* <- lang_en;; *);
+	[Запланований елемент, який представляє собою одиничну процедуру в партії, повну партію або набір партій (наприклад: кампанію).]
+	(* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+id;
+level;
+batch_size;
+schedule;
+resource_usage;
+status;;
+
+id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идентификатор]
+	(* <- lang_ru;; *);
+	[id]
+	(* <- lang_en;; *);
+	[ідентифікатор]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Предоставляет уникальный идентификатор (например: фактический номер кампании, партии, пакета, идентификатор процедуры).]
+	(* <- lang_ru;; *);
+	[Provides unique identification (e.g., actual campaign, lot, batch ID, procedural entity ID).]
+	(* <- lang_en;; *);
+	[Надає унікальний ідентифікатор (наприклад: фактичний номер кампанії, партії, пакета, ідентифікатор процедури).]
+	(* <- lang_uk;; *);;
+
+level
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[уровень]
+	(* <- lang_ru;; *);
+	[lavel]
+	(* <- lang_en;; *);
+	[рівень]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет уровень иерархии (например: кампания, партия, единичная процедура).]
+	(* <- lang_ru;; *);
+	[Specifies the hierarchy level (e.g., campaign, batch, unit procedure).]
+	(* <- lang_en;; *);
+	[Вказує рівень ієрархії (наприклад: кампанія, партія, одинична процедура).]
+	(* <- lang_uk;; *);;
+
+batch_size
+<- sc_node_not_relation;;
+
+schedule
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[график]
+	(* <- lang_ru;; *);
+	[schedule]
+	(* <- lang_en;; *);
+	[розклад]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет запланированные времена выполнения (начало / конец).]
+	(* <- lang_ru;; *);
+	[Defines scheduled execution times (start/stop).]
+	(* <- lang_en;; *);
+	[Визначає заплановані часи виконання (початок / завершення).]
+	(* <- lang_uk;; *);;
+
+resource_usage
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[использование ресурсов]
+	(* <- lang_ru;; *);
+	[resource usage]
+	(* <- lang_en;; *);
+	[використання ресурсів]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Указывает использование ресурсов для этой записи в графике.]
+	(* <- lang_ru;; *);
+	[Specifies resource usage for this schedule entry.]
+	(* <- lang_en;; *);
+	[Вказує використання ресурсів для цього запису в розкладі.]
+	(* <- lang_uk;; *);;
+
+status
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[статус]
+	(* <- lang_ru;; *);
+	[status]
+	(* <- lang_en;; *);
+	[статус]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет статус графика (например: предложенный для оценки (например, анализ "что будет, если"), запланированный, согласованный, начатый, завершенный).]
+	(* <- lang_ru;; *);
+	[Specifies schedule status (e.g., proposed for evaluation (such as what-if analysis), planned, committed, started, completed).]
+	(* <- lang_en;; *);
+	[Визначає статус розкладу (наприклад, запропонований для оцінки (наприклад: аналіз "що буде, якщо"), запланований, узгоджений, початий, завершений).]
+	(* <- lang_uk;; *);;
+
+schedule_parameter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[параметр расписания]
+	(* <- lang_ru;; *);
+	[schedule parameter]
+	(* <- lang_en;; *);
+	[параметр розкладу]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Формула значений, которые должны быть переданы в расписания партии и из них.]
+	(* <- lang_ru;; *);
+	[Formula values that are to be communicated to and from batch schedule entries.]
+	(* <- lang_en;; *);
+	[Значення формули, які мають бути передані від та до записів розкладу партії.]
+	(* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+parameter_id;
+parameter_type;
+description;
+engineering_units;
+value;
+scaled;
+usage;;
+
+parameter_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идентификатор параметра]
+	(* <- lang_ru;; *);
+	[parameter id]
+	(* <- lang_en;; *);
+	[ідентифікатор параметра]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Обеспечивает уникальную идентификацию.]
+	(* <- lang_ru;; *);
+	[Provides unique identification.]
+	(* <- lang_en;; *);
+	[Забезпечує унікальну ідентифікацію.]
+	(* <- lang_uk;; *);;
+
+parameter_type
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тип параметра]
+	(* <- lang_ru;; *);
+	[parameter type]
+	(* <- lang_en;; *);
+	[тип параметра]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Включает в себя способ интерпретации значения (например: константа, ссылка или уравнение).]
+	(* <- lang_ru;; *);
+	[Includes how the Value is interpreted (e.g., constant, reference, or equation).]
+	(* <- lang_en;; *);
+	[Включає спосіб інтерпретації значення (наприклад,: константа, посилання або рівняння).]
+	(* <- lang_uk;; *);;
+
+description
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[описание]
+	(* <- lang_ru;; *);
+	[description]
+	(* <- lang_en;; *);
+	[опис]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Описывает параметр или использование параметра.]
+	(* <- lang_ru;; *);
+	[Describes the parameter or use of the parameter.]
+	(* <- lang_en;; *);
+	[Описує параметр або використання параметра.]
+	(* <- lang_uk;; *);;
+
+engineering_units
+<- sc_node_not_relation;;
+
+value
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[значення]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Содержит значение параметра. Если это связь, Значение содержит уравнение,
+	форму, правило отложения или что-то еще, что объединяет связанные параметры. Если Значение -
+	параметр строительного блока, этот атрибут будет содержать значение по умолчанию.]
+	(* <- lang_ru;; *);
+	[Contains the parameter value. If it is a relation, Value contains the equation,
+	form, deferral rule, or whatever ties the related parameters together. If Value is
+	a building block parameter, this attribute will hold the default value.]
+	(* <- lang_en;; *);
+	[Містить значення параметра. Якщо це відношення, значення містить рівняння,
+	форму, правило відкладення або що-небудь інше, що об'єднує пов'язані параметри. Якщо значення -
+	параметр будівельного блоку, цей атрибут буде містити значення за замовчуванням.]
+	(* <- lang_uk;; *);;
+
+scaled
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[масштабирование]
+	(* <- lang_ru;; *);
+	[scaled]
+	(* <- lang_en;; *);
+	[масштабованне]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет правило масштабирования. Простейший случай: масштабировано или не масштабировано с учетом размера ссылочной партии.]
+	(* <- lang_ru;; *);
+	[Defines the scaling rule. Simplest case: scaled or not scaled with batch reference size.]
+	(* <- lang_en;; *);
+	[Визначає правило масштабування. Найпростіший випадок: масштабовано або не масштабовано з врахуванням розміру партії посилань.]
+	(* <- lang_uk;; *);;
+
+usage
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[использование]
+	(* <- lang_ru;; *);
+	[usage]
+	(* <- lang_en;; *);
+	[використання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет параметр как входной, выходной или процессовый параметр.]
+	(* <- lang_ru;; *);
+	[Identifies the parameter as a process input, process output, or process parameter.]
+	(* <- lang_en;; *);
+	[Визначає параметр як вхідний, вихідний або процесовий параметр.]
+	(* <- lang_uk;; *);;
+
+
+schedule_relation
+<- sc_not_relation;
+=> nrel_main_idtf:
+	[соотношение графиков]
+	(* <- lang_ru;; *);
+	[schedule relation]
+	(* <- lang_en;; *);
+	[співвідношення розкладу]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Представление связей между записями расписания (например, необходимая очистка линии, уборка между запланированными элементами, спецификации последовательных отношений внутри процедуры).]
+	(* <- lang_ru;; *);
+        [A representation of relations between schedule entries (e.g., required line clearance, cleaning between scheduled items, specifications of sequential relations within a procedure).]
+	(* <- lang_en;; *);
+	[Уявлення про зв'язки між записами розкладу (наприклад, необхідна очистка лінії, прибирання між запланованими елементами, специфікації послідовних відносин всередині процедури).]
+	(* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+execute_order;;
+
+execute_order
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[порядок выполнения]
+	(* <- lang_ru;; *);
+	[execute order]
+	(* <- lang_en;; *);
+	[порядок виконання]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Определяет последовательность обработки нескольких записей расписания относительно друг друга.]
+	(* <- lang_ru;; *);
+	[Specifies in what sequence multiple schedule entries should be processed relative to each other.]
+	(* <- lang_en;; *);
+	[Визначає послідовність обробки кількох записів розкладу відносно один одного.]
+	(* <- lang_uk;; *);;
+
+section_isa88_functional_description_production_information
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Раздел. Предметная область функционального описания информации о производстве]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of ​​functional description of production information]
+	(* <- lang_en;; *);
+	[Розділ. Предметна область функціонального опису плана інформаціі про виробництво]
+	(* <- lang_uk;; *);
+	[Kapitel. Themengebiet der Funktionsbeschreibung der Produktionsinformationen]
+	(* <- lang_de;; *);
+-> rrel_maximum_studied_object_class:
+production_information;
+-> rrel_not_maximum_studied_object_class:
+batch_specific_information;
+common_information;
+batch_history;
+executed_procedural_entity;
+batch_report;;
+
+production_information
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[информация о производстве]
+	(* <- lang_ru;; *);
+	[production information]
+	(* <- lang_en;; *);
+	[інформація про виробництво]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+	[Информация, сгенерированная во время производства партии.]
+	(* <- lang_ru;; *);
+	[Information generated during the production of a batch.]
+	(* <- lang_en;; *);
+	[Інформація, що генерується під час виробництва партії.]
+	(* <- lang_uk;; *);;
+
+
+batch_specific_information
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[информация о партии]
+	(* <- lang_ru;; *);
+	[batch specific information]
+	(* <- lang_en;; *);
+	[інформація про партію]
+	(* <- lang_uk;; *);
+=> nrel_summary:
+    [Данные, относящиеся к одной записи истории партии.]
+    (* <- lang_ru;; *);
+    [Data that relates to one batch history entry.]
+    (* <- lang_en;; *);
+    [Дані, що стосуються одного запису історії партії.]
+    (* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+batch_id;
+entry_id;
+new_value;
+engineering_units;
+equipment_id;
+utc;
+user_id;;
+
+batch_id
+<- sc_node_not_relation;;
+
+entry_id
+<- sc_node_not_relation;;
+
+new_value
+<- sc_node_not_relation;;
+
+engineering_units
+<- sc_node_not_relation;;
+
+equipment_id
+<- sc_node_not_relation;;
+
+utc
+<- sc_node_not_relation;;
+
+user_id
+<- sc_node_not_relation;;
+
+batch_history
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [история партии]
+    (* <- lang_ru;; *);
+    [batch history]
+    (* <- lang_en;; *);
+    [історія партії]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Элемент информации, который документирует производство партии.]
+    (* <- lang_ru;; *);
+    [An item of information that documents batch production.]
+    (* <- lang_en;; *);
+    [Елемент інформації, який документує виробництво партії.]
+    (* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+batch_id;;
+
+batch_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [идентификатор партии]
+    (* <- lang_ru;; *);
+    [batch id]
+    (* <- lang_en;; *);
+    [ідентифікатор партії]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Определяет фактический идентификатор партии.]
+    (* <- lang_ru;; *);
+    [Defines the actual Batch ID.]
+    (* <- lang_en;; *);
+    [Визначає фактичний ідентифікатор партії.]
+    (* <- lang_uk;; *);;
+
+common_information
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [общая информация]
+    (* <- lang_ru;; *);
+    [common information]
+    (* <- lang_en;; *);
+    [загальна інформація]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Данные, относящиеся к более чем одной записи истории партии (например: температура охлаждающей воды, атмосферное давление, емкость пара).]
+    (* <- lang_ru;; *);
+    [Data that relates to more than one batch history entry (e.g., cooling water temperature, atmospheric pressure, steam capacity).]
+    (* <- lang_en;; *);
+    [Дані, які стосуються більш, ніж одного запису історії партії (наприклад: температура охолоджувальної води, атмосферний тиск, потужність пари).]
+    (* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+entry_id;
+new_value;
+engineering_units;
+equipment_id;
+utc;
+user_id;;
+
+entry_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [идентификатор записи]
+    (* <- lang_ru;; *);
+    [entry id]
+    (* <- lang_en;; *);
+    [ідентифікатор запису]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Предоставляет уникальную идентификацию.]
+    (* <- lang_ru;; *);
+    [Provides unique identification.]
+    (* <- lang_en;; *);
+    [Забезпечує унікальну ідентифікацію.]
+    (* <- lang_uk;; *);;
+
+new_value
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [новое значение]
+    (* <- lang_ru;; *);
+    [new value]
+    (* <- lang_en;; *);
+    [новfе значення]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Обозначает текущее фактическое значение.]
+    (* <- lang_ru;; *);
+    [Indicates the current actual value.]
+    (* <- lang_en;; *);
+    [Вказує поточне фактичне значення.]
+    (* <- lang_uk;; *);;
+
+engineering_units
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [инженерные единицы]
+    (* <- lang_ru;; *);
+    [engineering units]
+    (* <- lang_en;; *);
+    [інженерні одиниці]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Определяет инженерные единицы, если они применимы к NewValue.]
+    (* <- lang_ru;; *);
+    [Defines the engineering units, if any, that are appropriate for the NewValue.]
+    (* <- lang_en;; *);
+    [Визначає інженерні одиниці, якщо вони застосовні до нового значення.]
+    (* <- lang_uk;; *);;
+
+equipment_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [идентификатор оборудования]
+    (* <- lang_ru;; *);
+    [equipment id]
+    (* <- lang_en;; *);
+    [ідентифікатор обладнання]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Идентифицирует элемент оборудования, который может быть связан с записью.]
+    (* <- lang_ru;; *);
+    [Identifies an equipment element that may be associated with the entry.]
+    (* <- lang_en;; *);
+    [Ідентифікує елемент обладнання, який може бути пов'язаний з записом.]
+    (* <- lang_uk;; *);;
+
+utc
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [время и дата в utc]
+    (* <- lang_ru;; *);
+    [utc Date and Time]
+    (* <- lang_en;; *);
+    [час та дата в utc]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Идентифицирует Universal Coordinated Time (UTC) и дату записи.]
+    (* <- lang_ru;; *);
+    [Identifies the Universal Coordinated Time (UTC) and date of the recorded entry.]
+    (* <- lang_en;; *);
+    [Ідентифікує Universal Coordinated Time (UTC) та дату запису.]
+    (* <- lang_uk;; *);;
+
+user_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [идентификатор пользователя]
+    (* <- lang_ru;; *);
+    [user id]
+    (* <- lang_en;; *);
+    [ідентифікатор користувача]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Идентифицирует пользователя, если он связан с изменением.]
+    (* <- lang_ru;; *);
+    [Identifies the user, if any, who is associated with the change.]
+    (* <- lang_en;; *);
+    [Ідентифікує користувача, якщо він пов'язаний зі зміною.]
+    (* <- lang_uk;; *);;
+
+executed_procedural_entity
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [выполненный процедурный объект]
+    (* <- lang_ru;; *);
+    [executed procedural entity]
+    (* <- lang_en;; *);
+    [виконуваний процесуальний суб'єкт]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Представление выполненной процедурной сущности рецепта (например, элемента процедурного оборудования).]
+    (* <- lang_ru;; *);
+    [A representation of a recipe entity (e.g., equipment procedural element) that has been executed.]
+    (* <- lang_en;; *);
+    [Представлення сутності рецепту (наприклад: елемент процедурного обладнання), яка була виконана.]
+    (* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+executed_procedural_entity_id;
+procedural_entity_counter;;
+
+executed_procedural_entity_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [идентификатор выполненной процедурной сущности]
+    (* <- lang_ru;; *);
+    [executed procedural entity id]
+    (* <- lang_en;; *);
+    [ідентифікатор виконаної сутності]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Предоставляет уникальную идентификацию.]
+    (* <- lang_ru;; *);
+    [Provides unique identification.]
+    (* <- lang_en;; *);
+    [Забезпечує унікальну ідентифікацію.]
+    (* <- lang_uk;; *);;
+
+procedural_entity_counter
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [счетчик процедурных сущностей]
+    (* <- lang_ru;; *);
+    [procedural entity counter]
+    (* <- lang_en;; *);
+    [лічильник процедурних сутностей]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Уникально идентифицирует повторное выполнение той же процедурной сущности.]
+    (* <- lang_ru;; *);
+    [Uniquely identifies repeated execution of the same procedural entity.]
+    (* <- lang_en;; *);
+    [Унікально ідентифікує повторне виконання тієї ж процедурної сутності.]
+    (* <- lang_uk;; *);;
+
+batch_report
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [отчёт о партиях]
+    (* <- lang_ru;; *);
+    [batch report]
+    (* <- lang_en;; *);
+    [звіт про партії]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Компонент отчета о партии.]
+    (* <- lang_ru;; *);
+    [A component of a batch report.]
+    (* <- lang_en;; *);
+    [Компонент звіту про партію.]
+    (* <- lang_uk;; *);
+-> rrel_not_maximum_studied_object_class:
+report_id;;
+
+report_id
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [Идентификатор отчета]
+    (* <- lang_ru;; *);
+    [Report ID]
+    (* <- lang_en;; *);
+    [ідентифікатор звіту]
+    (* <- lang_uk;; *);
+=> nrel_summary:
+    [Предоставляет уникальную идентификацию.]
+    (* <- lang_ru;; *);
+    [Provides unique identification.]
+    (* <- lang_en;; *);
+    [Забезпечує унікальну ідентифікацію.]
+    (* <- lang_uk;; *);;
