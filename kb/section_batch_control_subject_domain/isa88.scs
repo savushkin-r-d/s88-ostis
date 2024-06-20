@@ -18,6 +18,8 @@ section_isa88_process_models
 section_isa88_procedural_control_models
 (* => nrel_section_base_order: section_control_activities;; *);
 section_control_activities
+(* => nrel_section_base_order: section_isa88_functional_description;; *);
+section_isa88_functional_description
 };
 
 => nrel_summary:
@@ -31,8 +33,7 @@ section_control_activities
 	(* <- lang_de;; *);;
 
 rrel_key_sc_element -> (section_isa88 -> subject_domain_isa88); (section_isa88_physical_models -> subject_domain_isa88_physical);
-(section_isa88_process_models -> subject_domain_isa88_process); (section_isa88_procedural_control_models -> subject_domain_isa88_procedural);
-(section_control_activities -> subject_domain_control_activities);;
+(section_isa88_process_models -> subject_domain_isa88_process); (section_isa88_procedural_control_models -> subject_domain_isa88_procedural); (section_control_activities -> subject_domain_control_activities); (section_isa88_functional_description -> subject_domain_isa88_functional_description_recipes);;
 
 section_isa88_physical_models
 <- sc_node_struct;
