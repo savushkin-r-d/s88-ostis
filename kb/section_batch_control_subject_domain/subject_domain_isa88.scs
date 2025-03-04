@@ -1,5 +1,5 @@
 subject_domain_isa88
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
   [Предметная область предприятий рецептурного производства]
   (* <- lang_ru;; *);

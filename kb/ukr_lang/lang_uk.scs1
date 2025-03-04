@@ -1,5 +1,5 @@
 lang_uk
-<-sc_node_not_relation;
+<-sc_node_class;
 <-languages;
 => nrel_main_idtf:
    [Украинский язык] (* <- lang_ru;; *);

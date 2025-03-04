@@ -8,7 +8,7 @@ sd_of_pfc_texts
 	[Предметна область текстів мови PFC]
 	(* <- lang_uk;; *);
 <- subject_domain;
-<- sc_node_struct;
+<- sc_node_structure;
 <- structure;
 -> rrel_maximum_studied_object_class: pfc_element_text;
 -> rrel_not_maximum_studied_object_class:
@@ -34,7 +34,7 @@ sd_of_pfc_texts
 	two_way_link_text;
 -> rrel_explored_relation: text_signature;;
 
-sc_node_not_relation -> pfc_element_text;;
+sc_node_class -> pfc_element_text;;
 pfc_element_text
 => nrel_main_idtf:
 	[изображение элемента языка PFC]
@@ -72,7 +72,7 @@ pfc_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_execution_element_text;;
+sc_node_class -> procedure_execution_element_text;;
 procedure_execution_element_text
 => nrel_main_idtf:
 	[изображение элемента выполнения процедуры]
@@ -109,7 +109,7 @@ procedure_execution_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> allocation_element_text;;
+sc_node_class -> allocation_element_text;;
 allocation_element_text
 => nrel_main_idtf:
 	[изображение элемента размещения ресурсов]
@@ -139,7 +139,7 @@ allocation_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> nesting_of_procedural_element_text;;
+sc_node_class -> nesting_of_procedural_element_text;;
 nesting_of_procedural_element_text
 => nrel_main_idtf:
 	[изображение вложенности процедурного элемента]
@@ -169,7 +169,7 @@ nesting_of_procedural_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> synchronization_element_text;;
+sc_node_class -> synchronization_element_text;;
 synchronization_element_text
 => nrel_main_idtf:
 	[изображение элемента синхронизации]
@@ -201,7 +201,7 @@ synchronization_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> procedural_element_text;;
+sc_node_class -> procedural_element_text;;
 procedural_element_text
 => nrel_main_idtf:
 	[изображение процедурного элемента]
@@ -236,7 +236,7 @@ procedural_element_text
 		*);;
 	*);;
 
-sc_node_not_relation -> connection_text;;
+sc_node_class -> connection_text;;
 connection_text
 => nrel_main_idtf:
 	[изображение связи]
@@ -271,7 +271,7 @@ connection_text
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_starting_text;;
+sc_node_class -> procedure_starting_text;;
 procedure_starting_text
 => nrel_main_idtf:
 	[изображение начала процедуры]
@@ -303,7 +303,7 @@ procedure_starting_text
 		*);;
 	*);;
 
-sc_node_not_relation -> starting_of_sequence_execution_choice_text;;
+sc_node_class -> starting_of_sequence_execution_choice_text;;
 starting_of_sequence_execution_choice_text
 => nrel_main_idtf:
 	[изображение начала выбора последовательности выполнения]
@@ -337,7 +337,7 @@ starting_of_sequence_execution_choice_text
 		*);;
 	*);;
 
-sc_node_not_relation -> starting_of_parallel_sequence_execution_text;;
+sc_node_class -> starting_of_parallel_sequence_execution_text;;
 starting_of_parallel_sequence_execution_text
 => nrel_main_idtf:
 	[изображение начала параллельного выполнения последовательности]
@@ -369,7 +369,7 @@ starting_of_parallel_sequence_execution_text
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_finishing_text;;
+sc_node_class -> procedure_finishing_text;;
 procedure_finishing_text
 => nrel_main_idtf:
 	[изображение конца процедуры]
@@ -401,7 +401,7 @@ procedure_finishing_text
 		*);;
 	*);;
 
-sc_node_not_relation -> finishing_of_parallel_sequence_execution_text;;
+sc_node_class -> finishing_of_parallel_sequence_execution_text;;
 finishing_of_parallel_sequence_execution_text
 => nrel_main_idtf:
 	[изображение конца параллельного выполнения последовательности]
@@ -431,7 +431,7 @@ finishing_of_parallel_sequence_execution_text
 		*);;
 	*);;
 
-sc_node_not_relation -> finishing_of_sequence_execution_choice_text;;
+sc_node_class -> finishing_of_sequence_execution_choice_text;;
 finishing_of_sequence_execution_choice_text
 => nrel_main_idtf:
 	[изображение конца выбора последовательности выполнения]
@@ -463,7 +463,7 @@ finishing_of_sequence_execution_choice_text
 		*);;
 	*);;
 
-sc_node_not_relation -> phase_text;;
+sc_node_class -> phase_text;;
 phase_text
 => nrel_main_idtf:
 	[изображение фазы]
@@ -493,7 +493,7 @@ phase_text
 		*);;
 	*);;
 
-sc_node_not_relation -> operation_text;;
+sc_node_class -> operation_text;;
 operation_text
 => nrel_main_idtf:
 	[изображение операции]
@@ -525,7 +525,7 @@ operation_text
 		*);;
 	*);;
 
-sc_node_not_relation -> unit_procedure_text;;
+sc_node_class -> unit_procedure_text;;
 unit_procedure_text
 => nrel_main_idtf:
 	[изображение процедуры технологической установки]
@@ -557,7 +557,7 @@ unit_procedure_text
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_text;;
+sc_node_class -> procedure_text;;
 procedure_text
 => nrel_main_idtf:
 	[изображение процедуры]
@@ -589,7 +589,7 @@ procedure_text
 		*);;
 	*);;
 
-sc_node_not_relation -> implisit_transition_text;;
+sc_node_class -> implisit_transition_text;;
 implisit_transition_text
 => nrel_main_idtf:
 	[изображение неявного перехода]
@@ -619,7 +619,7 @@ implisit_transition_text
 		*);;
 	*);;
 
-sc_node_not_relation -> explicit_transition_text;;
+sc_node_class -> explicit_transition_text;;
 explicit_transition_text
 => nrel_main_idtf:
 	[изображение явного перехода]
@@ -651,7 +651,7 @@ explicit_transition_text
 		*);;
 	*);;
 
-sc_node_not_relation -> one_way_link_text;;
+sc_node_class -> one_way_link_text;;
 one_way_link_text
 => nrel_main_idtf:
 	[изображение односторонней ссылки]
@@ -679,7 +679,7 @@ one_way_link_text
 		*);;
 	*);;
 
-sc_node_not_relation -> two_way_link_text;;
+sc_node_class -> two_way_link_text;;
 two_way_link_text
 => nrel_main_idtf:
 	[изображение двусторонней ссылки]
@@ -709,7 +709,7 @@ two_way_link_text
 		*);;
 	*);;
 
-sc_node_norole_relation -> nrel_text_signature;;
+sc_node_non_role_relation -> nrel_text_signature;;
 nrel_image_signature
 => nrel_main_idtf:
 	[подпись к изображению*]
@@ -750,7 +750,7 @@ nrel_image_signature
 *);;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_text_signature;;
 	<- arity;;
 *);;
