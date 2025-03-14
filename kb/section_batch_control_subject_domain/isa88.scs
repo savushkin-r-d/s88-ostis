@@ -1,6 +1,6 @@
 section_isa88
 <- ui_start_sc_element;
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область предприятий рецептурного производства]
 	(* <- lang_ru;; *);
@@ -36,7 +36,7 @@ rrel_key_sc_element -> (section_isa88 -> subject_domain_isa88); (section_isa88_p
 (section_isa88_process_models -> subject_domain_isa88_process); (section_isa88_procedural_control_models -> subject_domain_isa88_procedural); (section_control_activities -> subject_domain_control_activities); (section_isa88_functional_description -> subject_domain_isa88_functional_description_recipes);;
 
 section_isa88_physical_models
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область физических моделей рецептурных производств]
 	(* <- lang_ru;; *);
@@ -48,7 +48,7 @@ section_isa88_physical_models
 	(* <- lang_de;; *);;
 
 section_isa88_process_models
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область процессных моделей рецептурных производств]
 	(* <- lang_ru;; *);
@@ -60,7 +60,7 @@ section_isa88_process_models
 	(* <- lang_de;; *);;
 
 section_isa88_procedural_control_models
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область моделей процедурного управления оборудованием рецептурных производств]
 	(* <- lang_ru;; *);
@@ -72,7 +72,7 @@ section_isa88_procedural_control_models
 	(* <- lang_de;; *);;
 
 section_control_activities
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область деятельности по управлению рецептурным производством]
 	(* <- lang_ru;; *);

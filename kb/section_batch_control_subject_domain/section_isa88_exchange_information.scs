@@ -1,5 +1,5 @@
 section_isa88_exchange_information
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область обмена информацией]
 	(* <- lang_ru;; *);
@@ -22,7 +22,7 @@ section_isa88_exchange_information_bxt_master_recipe
 };;
 
 section_isa88_exchange_information_bxt
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область обмена информацией BXT]
 	(* <- lang_ru;; *);
@@ -39,7 +39,7 @@ exchange_id;
 exchange_value;;
 
 exchange_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор обмена]
 	(* <- lang_ru;; *);
@@ -72,7 +72,7 @@ exchange_value
 	(* <- lang_uk;; *);;
 	
 section_isa88_exchange_information_bxt_table
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область информационного обмена содержимым таблицы BXT.]
 	(* <- lang_ru;; *);
@@ -92,7 +92,7 @@ tool_version;
 tool_schema;;
 
 schema
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[схема]
 	(* <- lang_ru;; *);
@@ -109,7 +109,7 @@ schema
 	(* <- lang_uk;; *);;
 	
 delimiter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[разделитель]
 	(* <- lang_ru;; *);
@@ -129,7 +129,7 @@ recipe element hierarchical name.]
 	(* <- lang_uk;; *);;
 	
 tool_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор инструмента]
 	(* <- lang_ru;; *);
@@ -146,7 +146,7 @@ tool_id
 	(* <- lang_uk;; *);;
 	
 tool_version
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[версия инструмента]
 	(* <- lang_ru;; *);
@@ -163,7 +163,7 @@ tool_version
 	(* <- lang_uk;; *);;
 	
 tool_schema
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[схема инструмента]
 	(* <- lang_ru;; *);
@@ -180,7 +180,7 @@ tool_schema
 	(* <- lang_uk;; *);;
 	
 section_isa88_exchange_information_bxt_enumeration_set
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область информационного обмена BXT набором перечислений.]
 	(* <- lang_ru;; *);
@@ -197,7 +197,7 @@ enum_set;
 description;;
 	
 description
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[описание]
 	(* <- lang_ru;; *);
@@ -214,7 +214,7 @@ description
 	(* <- lang_uk;; *);;
 	
 enum_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[перечисления]
 	(* <- lang_ru;; *);
@@ -265,7 +265,7 @@ value_data_types;
 value_type;;
 
 boolean
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[логический]
 	(* <- lang_ru;; *);
@@ -282,7 +282,7 @@ boolean
 	(* <- lang_uk;; *);;
 	
 direction_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип направления]
 	(* <- lang_ru;; *);
@@ -299,7 +299,7 @@ direction_type
 	(* <- lang_uk;; *);;
 	
 equipment_level
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[уровень обарудования]
 	(* <- lang_ru;; *);
@@ -316,7 +316,7 @@ equipment_level
 	(* <- lang_uk;; *);;
 	
 equipment_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип обарудования]
 	(* <- lang_ru;; *);
@@ -333,7 +333,7 @@ equipment_type
 	(* <- lang_uk;; *);;
 	
 evaluation_rule
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[правило вычисления]
 	(* <- lang_ru;; *);
@@ -350,7 +350,7 @@ evaluation_rule
 	(* <- lang_uk;; *);;
 	
 formula_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип формулы]
 	(* <- lang_ru;; *);
@@ -367,7 +367,7 @@ formula_type
 	(* <- lang_uk;; *);;
 	
 formula_sub_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[подтип формулы]
 	(* <- lang_ru;; *);
@@ -384,7 +384,7 @@ formula_sub_type
 	(* <- lang_uk;; *);;
 	
 link_depiction
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отображение связей]
 	(* <- lang_ru;; *);
@@ -401,7 +401,7 @@ link_depiction
 	(* <- lang_uk;; *);;
 	
 link_to_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[ссылка на тип]
 	(* <- lang_ru;; *);
@@ -418,7 +418,7 @@ link_to_type
 	(* <- lang_uk;; *);;
 	
 link_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип ссылкu]
 	(* <- lang_ru;; *);
@@ -435,7 +435,7 @@ link_type
 	(* <- lang_uk;; *);;
 	
 re_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип элемента рецепта]
 	(* <- lang_ru;; *);
@@ -455,7 +455,7 @@ allocation symbol.]
 	(* <- lang_uk;; *);;
 	
 re_use
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[использование элемента рецепта]
 	(* <- lang_ru;; *);
@@ -472,7 +472,7 @@ re_use
 	(* <- lang_uk;; *);;
 	
 recipe_status
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[статус рецепта]
 	(* <- lang_ru;; *);
@@ -489,7 +489,7 @@ recipe_status
 	(* <- lang_uk;; *);;
 	
 record_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор записей]
 	(* <- lang_ru;; *);
@@ -509,7 +509,7 @@ category of batch history information.]
 	(* <- lang_uk;; *);;
 	
 record_set_control_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись набора контрольных рецептов]
 	(* <- lang_ru;; *);
@@ -529,7 +529,7 @@ ControlRecipe.]
 	(* <- lang_uk;; *);;
 	
 record_set_master_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись набора основных рецептов]
 	(* <- lang_ru;; *);
@@ -549,7 +549,7 @@ MasterRecipe.]
 	(* <- lang_uk;; *);;
 	
 record_set_execution_info
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информация о выполнении набора записей]
 	(* <- lang_ru;; *);
@@ -569,7 +569,7 @@ ExecutionInfo]
 	(* <- lang_uk;; *);;
 	
 record_set_material_info
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информация о материале, установленном для записи]
 	(* <- lang_ru;; *);
@@ -588,7 +588,7 @@ MaterialInfo.]
 	(* <- lang_uk;; *);;
 	
 record_set_continuous_data
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор непрерывных данных для записи]
 	(* <- lang_ru;; *);
@@ -607,7 +607,7 @@ ContinuousData.]
 	(* <- lang_uk;; *);;
 	
 record_set_events
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор записей событий]
 	(* <- lang_ru;; *);
@@ -626,7 +626,7 @@ Events.]
 	(* <- lang_uk;; *);;	
 	
 record_set_operator_change
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор записей смены оператора]
 	(* <- lang_ru;; *);
@@ -645,7 +645,7 @@ OperatorChange.]
 	(* <- lang_uk;; *);;
 
 record_set_operator_comment
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор записей коментария оператора]
 	(* <- lang_ru;; *);
@@ -664,7 +664,7 @@ OperatorComment.]
 	(* <- lang_uk;; *);;
 	
 record_set_analysis_data
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[набор записей анализа данных]
 	(* <- lang_ru;; *);
@@ -683,7 +683,7 @@ AnalysisData.]
 	(* <- lang_uk;; *);;
 	
 record_set_late_record
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись, установленная с опозданием]
 	(* <- lang_ru;; *);
@@ -702,7 +702,7 @@ LateRecord.]
 	(* <- lang_uk;; *);;
 	
 record_set_recipe_data
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись с данными рецепта]
 	(* <- lang_ru;; *);
@@ -721,7 +721,7 @@ RecipeData.]
 	(* <- lang_uk;; *);;
 	
 record_set_recipe_specified
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись указанного рецепта]
 	(* <- lang_ru;; *);
@@ -740,7 +740,7 @@ RecipeSpecified.]
 	(* <- lang_uk;; *);;
 	
 record_set_summary_data
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись итоговых данных]
 	(* <- lang_ru;; *);
@@ -759,7 +759,7 @@ SummaryData.]
 	(* <- lang_uk;; *);;
 	
 schedule_action
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[планирование действия]
 	(* <- lang_ru;; *);
@@ -776,7 +776,7 @@ schedule_action
 	(* <- lang_uk;; *);;
 	
 schedule_mode
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[режим расписания]
 	(* <- lang_ru;; *);
@@ -793,7 +793,7 @@ schedule_mode
 	(* <- lang_uk;; *);;
 	
 schedule_status
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[статус расписания]
 	(* <- lang_ru;; *);
@@ -810,7 +810,7 @@ schedule_status
 	(* <- lang_uk;; *);;
 	
 se_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип se]
 	(* <- lang_ru;; *);
@@ -827,7 +827,7 @@ se_type
 	(* <- lang_uk;; *);;
 	
 value_data_types
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[типы данных значений]
 	(* <- lang_ru;; *);
@@ -844,7 +844,7 @@ value_data_types
 	(* <- lang_uk;; *);;
 	
 value_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип значения]
 	(* <- lang_ru;; *);
@@ -861,7 +861,7 @@ value_type
 	(* <- lang_uk;; *);;
 	
 section_isa88_exchange_information_bxt_enumeration
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область информационного обмена BXT перечислений.]
 	(* <- lang_ru;; *);
@@ -880,7 +880,7 @@ enum_string;
 description;;
 
 enum_value
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[значение перечисления]
 	(* <- lang_ru;; *);
@@ -897,7 +897,7 @@ enum_value
 	(* <- lang_uk;; *);;
 	
 enum_string
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[строка перечисления]
 	(* <- lang_ru;; *);
@@ -914,7 +914,7 @@ enum_string
 	(* <- lang_uk;; *);;
 	
 information_exchange
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информационный обмен]
 	(* <- lang_ru;; *);
@@ -932,7 +932,7 @@ information_exchange
 
 
 section_isa88_exchange_information_bxt_master_recipe
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область информационного обмена технологических рецептур.]
 	(* <- lang_ru;; *);
@@ -956,7 +956,7 @@ BXT_MRecipeElementEquip;
 BXT_MRecipeStepEquip;;
 
 BXT_MRecipeStep
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого использования рецептуры внутри рецептуры.]
 	(* <- lang_ru;; *);
@@ -991,7 +991,7 @@ MaximumScale;
 MinimumScale;;
 
 ParentRE
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор рецептуры или технологической рецептуры, с которой связан этот шаг.]
 	(* <- lang_ru;; *);
@@ -1012,7 +1012,7 @@ ParentRE
 	(* <- lang_de;; *);;
 
 ParentVersion
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор версии рецептуры или технологической рецептуры, с которой связан этот этап.]
 	(* <- lang_ru;; *);
@@ -1033,7 +1033,7 @@ ParentVersion
 	(* <- lang_de;; *);;
 
 StepID
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор уникального экземпляра выполнения указанной рецептуры.]
 	(* <- lang_ru;; *);
@@ -1054,7 +1054,7 @@ StepID
 	(* <- lang_de;; *);;
 
 VerticalStart
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор вертикальной начальной позиции в представлении элемента.]
 	(* <- lang_ru;; *);
@@ -1075,7 +1075,7 @@ VerticalStart
 	(* <- lang_de;; *);;
 
 VerticalStop
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор вертикальной конечной позиции в представлении элемента.]
 	(* <- lang_ru;; *);
@@ -1096,7 +1096,7 @@ VerticalStop
 	(* <- lang_de;; *);;
 
 HorizontalStart
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор горизонтального исходного положения.]
 	(* <- lang_ru;; *);
@@ -1117,7 +1117,7 @@ HorizontalStart
 	(* <- lang_de;; *);;
 
 HorizontalStop
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор горизонтального положения остановки.]
 	(* <- lang_ru;; *);
@@ -1146,7 +1146,7 @@ von links nach (1,1) unten rechts.]
 	(* <- lang_de;; *);;
 
 ScaleReference
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор ссылочного размера для элементов рецептуры.]
 	(* <- lang_ru;; *);
@@ -1167,7 +1167,7 @@ ScaleReference
 	(* <- lang_de;; *);;
 
 ScaleEngrUnits
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор единиц измерения масштабирования.]
 	(* <- lang_ru;; *);
@@ -1188,7 +1188,7 @@ ScaleEngrUnits
 	(* <- lang_de;; *);;
 
 MaximumScale
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор максимального масштабного коэффициента или размера рецептуры.]
 	(* <- lang_ru;; *);
@@ -1209,7 +1209,7 @@ MaximumScale
 	(* <- lang_de;; *);;
 
 MinimumScale
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[спецификатор минимального масштабного коэффициента или размера рецептуры.]
 	(* <- lang_ru;; *);
@@ -1232,7 +1232,7 @@ MinimumScale
 
 
 BXT_MRecipeElement
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого обмениваемой рецептуры.]
 	(* <- lang_ru;; *);
@@ -1272,7 +1272,7 @@ DerivedRE;
 DerivedVersion;;
 
 RE_ID
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[рецептура, которая будет заменена.]
 	(* <- lang_ru;; *);
@@ -1293,7 +1293,7 @@ RE_ID
 	(* <- lang_de;; *);;
 
 REVersion
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[версия рецептуры.]
 	(* <- lang_ru;; *);
@@ -1314,7 +1314,7 @@ REVersion
 	(* <- lang_de;; *);;
 
 VersionDate
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата и время последнего изменения этой версии рецептуры.]
 	(* <- lang_ru;; *);
@@ -1335,7 +1335,7 @@ VersionDate
 	(* <- lang_de;; *);;
 
 ApprovalDate
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата и время утверждения этой версии рецептуры.]
 	(* <- lang_ru;; *);
@@ -1356,7 +1356,7 @@ ApprovalDate
 	(* <- lang_de;; *);;
 
 EffectiveDate
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата и время вступления в силу этой версии рецептуры.]
 	(* <- lang_ru;; *);
@@ -1377,7 +1377,7 @@ EffectiveDate
 	(* <- lang_de;; *);;
 
 ExpirationDate
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата и время истечения срока действия этой версии рецептуры.]
 	(* <- lang_ru;; *);
@@ -1399,7 +1399,7 @@ ExpirationDate
 	(* <- lang_de;; *);;
 
 Author
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[человек или система, создавшая эту версию.]
 	(* <- lang_ru;; *);
@@ -1420,7 +1420,7 @@ Author
 	(* <- lang_de;; *);;
 
 ApprovedBy
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[человек или система, утвердившая эту версию рецептуры.]
 	(* <- lang_ru;; *);
@@ -1441,7 +1441,7 @@ ApprovedBy
 	(* <- lang_de;; *);;
 
 ProcessCellID
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[технологическая ячейка.]
 	(* <- lang_ru;; *);
@@ -1462,7 +1462,7 @@ ProcessCellID
 	(* <- lang_de;; *);;
 
 ProductID
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор продукта.]
 	(* <- lang_ru;; *);
@@ -1483,7 +1483,7 @@ ProductID
 	(* <- lang_de;; *);;
 
 UsageConstraint
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[другие правила.]
 	(* <- lang_ru;; *);
@@ -1504,7 +1504,7 @@ UsageConstraint
 	(* <- lang_de;; *);;
 	
 Description
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
   [описание.]
   (* <- lang_ru;; *);
@@ -1525,7 +1525,7 @@ Description
   (* <- lang_de;; *);;
 
 Status
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[статус информации.]
 	(* <- lang_ru;; *);
@@ -1547,7 +1547,7 @@ enumeration from the enumeration set "Recipe Status.”]
 	(* <- lang_de;; *);;
 
 RE_Type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип рецептуры.]
 	(* <- lang_ru;; *);
@@ -1568,7 +1568,7 @@ RE_Type
 	(* <- lang_de;; *);;
 
 RE_Function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[необязательная ссылка на таблицы обмена информацией об оборудовании.]
 	(* <- lang_ru;; *);
@@ -1593,7 +1593,7 @@ Verweis auf ein verfahrenstechnisches Gerät. Wenn dieser Eintrag NULL ist, wird
 	(* <- lang_de;; *);;
 
 RE_Use
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[связь между технологической рецептурой и BXT_MRecipeStep (одна запись для каждого использования рецептуры внутри рецептуры).]
 	(* <- lang_ru;; *);
@@ -1618,7 +1618,7 @@ als RE ein Baustein der Bibliothek war, der vollständig im Rezept reproduziert 
 	(* <- lang_de;; *);;
 
 DerivedRE
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[рецептура, из которой была получена эта рецептура.]
 	(* <- lang_ru;; *);
@@ -1639,7 +1639,7 @@ DerivedRE
 	(* <- lang_de;; *);;
 
 DerivedVersion
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[версия рецептуры, из которой была получена эта рецептура.]
 	(* <- lang_ru;; *);
@@ -1661,7 +1661,7 @@ DerivedVersion
 
 
 BXT_MRecipeTransition
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого перехода.]
 	(* <- lang_ru;; *);
@@ -1682,7 +1682,7 @@ BXT_MRecipeTransition
 	(* <- lang_de;; *);;
 
 BXT_MRecipeLink
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждой ссылки.]
 	(* <- lang_ru;; *);
@@ -1703,7 +1703,7 @@ BXT_MRecipeLink
 	(* <- lang_de;; *);;
 
 BXT_MRecipeElementParameter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись на каждый параметр для каждой рецептуры.]
 	(* <- lang_ru;; *);
@@ -1724,7 +1724,7 @@ BXT_MRecipeElementParameter
 	(* <- lang_de;; *);;
 
 BXT_MRecipeStepParameter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого параметра для каждого шага.]
 	(* <- lang_ru;; *);
@@ -1745,7 +1745,7 @@ BXT_MRecipeStepParameter
 	(* <- lang_de;; *);;
 
 BXT_MRecipeOtherInformation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого элемента прочей информации.]
 	(* <- lang_ru;; *);
@@ -1766,7 +1766,7 @@ BXT_MRecipeOtherInformation
 	(* <- lang_de;; *);;
 
 BXT_MRecipeElementEquip
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого требования к свойству рецептуры.]
 	(* <- lang_ru;; *);
@@ -1787,7 +1787,7 @@ BXT_MRecipeElementEquip
 	(* <- lang_de;; *);;
 
 BXT_MRecipeStepEquip
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[одна запись для каждого значения свойства оборудования.]
 	(* <- lang_ru;; *);

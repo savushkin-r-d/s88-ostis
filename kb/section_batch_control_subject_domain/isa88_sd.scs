@@ -1,6 +1,6 @@
 
 common_resource
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[общий ресурс]
 	(* <- lang_ru;; *);
@@ -57,7 +57,7 @@ common_resource
 	*);;
 
 exclusive_use_resource
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[исключительно используемый ресурс]
 	(* <- lang_ru;; *);
@@ -89,7 +89,7 @@ exclusive_use_resource
 	*);;
 
 shared_use_resource
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[совместно используемый ресурс]
 	(* <- lang_ru;; *);
@@ -121,7 +121,7 @@ shared_use_resource
 	*);;
 
 recipe_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[рецептурный объект]
 	(* <- lang_ru;; *);
@@ -159,7 +159,7 @@ recipe_entity
 	*);;
 
 recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[рецепт]
 	(* <- lang_ru;; *);
@@ -213,7 +213,7 @@ recipe
 	*);;
 
 general_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[общий рецепт]
 	(* <- lang_ru;; *);
@@ -245,7 +245,7 @@ general_recipe
 	*);;
 
 site_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[местный рецепт]
 	(* <- lang_ru;; *);
@@ -299,7 +299,7 @@ site_recipe
 	*);;
 
 master_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[главный рецепт]
 	(* <- lang_ru;; *);
@@ -331,7 +331,7 @@ master_recipe
 	*);;
 
 control_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управляющий рецепт]
 	(* <- lang_ru;; *);
@@ -363,7 +363,7 @@ control_recipe
 	*);;
 
 unit_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[установочный рецепт]
 	(* <- lang_ru;; *);
@@ -417,7 +417,7 @@ unit_recipe
 	*);;
 
 formula
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[рецептурная формула]
 	(* <- lang_ru;; *);
@@ -449,7 +449,7 @@ formula
 	*);;
 
 header
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[заголовок рецепта]
 	(* <- lang_ru;; *);
@@ -481,7 +481,7 @@ header
 	*);;
 
 nrel_recipe_procedure
-<- sc_node_norole_relation;
+<- sc_node_non_role_relation;
 => nrel_idtf:
 	[технология рецепта*]
 	(* <- lang_ru;; *);
@@ -498,7 +498,7 @@ nrel_recipe_procedure
 	(* <- lang_uk;; *);;
 
 line
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[линия]
 	(* <- lang_ru;; *);
@@ -537,7 +537,7 @@ line
 	*);;
 
 procedure
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[технология]
 	(* <- lang_ru;; *);
@@ -591,7 +591,7 @@ procedure
 	*);;
 
 batch
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[партия]
 	(* <- lang_ru;; *);
@@ -652,7 +652,7 @@ batch
 	*);;
 
 process
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[производственный процесс]
 	(* <- lang_ru;; *);
@@ -684,7 +684,7 @@ process
 	*);;
 
 process_input
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[вход процесса]
 	(* <- lang_ru;; *);
@@ -716,7 +716,7 @@ process_input
 	*);;
 
 process_output
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[выход процесса]
 	(* <- lang_ru;; *);
@@ -748,7 +748,7 @@ process_output
 	*);;
 
 process_parameter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[параметр процесса]
 	(* <- lang_ru;; *);
@@ -780,7 +780,7 @@ process_parameter
 	*);;
 
 state
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[производственное состояние]
 	(* <- lang_ru;; *);
@@ -834,7 +834,7 @@ state
 	*);;
 
 lot
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[партия материала]
 	(* <- lang_ru;; *);
@@ -888,7 +888,7 @@ lot
 	*);;
 
 mode
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[режим]
 	(* <- lang_ru;; *);
@@ -920,7 +920,7 @@ mode
 	*);;
 
 path
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[маршрут]
 	(* <- lang_ru;; *);
@@ -959,7 +959,7 @@ path
 	*);;
 
 batch_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управление партиями]
 	(* <- lang_ru;; *);
@@ -991,7 +991,7 @@ batch_control
 	*);;
 
 procedural_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[технологическое управление]
 	(* <- lang_ru;; *);
@@ -1023,7 +1023,7 @@ procedural_control
 	*);;
 
 coordination_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[координационное управление]
 	(* <- lang_ru;; *);
@@ -1055,7 +1055,7 @@ coordination_control
 	*);;
 
 process_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управление процессом]
 	(* <- lang_ru;; *);
@@ -1087,7 +1087,7 @@ process_control
 	*);;
 
 recipe_management
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управление рецептурными данными]
 	(* <- lang_ru;; *);
@@ -1119,7 +1119,7 @@ recipe_management
 	*);;
 
 basic_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[базовое управление]
 	(* <- lang_ru;; *);
@@ -1173,7 +1173,7 @@ basic_control
 	*);;
 
 process_management
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[процессное управление]
 	(* <- lang_ru;; *);
@@ -1205,7 +1205,7 @@ process_management
 	*);;
 
 unit_supervision
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управление оборудованием]
 	(* <- lang_ru;; *);
@@ -1237,7 +1237,7 @@ unit_supervision
 	*);;
 
 equipment_control
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[управление оборудованием]
 	(* <- lang_ru;; *);
@@ -1269,7 +1269,7 @@ equipment_control
 	*);;
 
 exception_handling
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[обработка исключений]
 	(* <- lang_ru;; *);

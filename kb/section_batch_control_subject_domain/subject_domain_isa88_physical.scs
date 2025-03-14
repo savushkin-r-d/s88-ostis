@@ -1,5 +1,5 @@
 subject_domain_isa88_physical
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf: 
 	[Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
  	[Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
@@ -23,7 +23,7 @@ sb_d_of_p_id_rules;
 sb_d_of_p_id_texts;;
 
 equipment_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[объект оборудования]
 	(* <- lang_ru;; *);
@@ -56,7 +56,7 @@ equipment_entity
 => nrel_inclusion: process_cell; unit; equipment_module; control_module; enterprise; site; area;;
 
 process_cell
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[ячейка процесса]
 	(* <- lang_ru;; *);
@@ -110,7 +110,7 @@ process_cell
 	*);;
 
 unit
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[аппарат]
 	(* <- lang_ru;; *);
@@ -164,7 +164,7 @@ unit
 	*);;
 
 equipment_module
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[агрегат]
 	(* <- lang_ru;; *);
@@ -218,7 +218,7 @@ equipment_module
 	*);;
 
 control_module
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[блок управления]
 	(* <- lang_ru;; *);
@@ -272,7 +272,7 @@ control_module
 	*);;
 
 enterprise
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[предприятие]
 	(* <- lang_ru;; *);
@@ -311,7 +311,7 @@ enterprise
 	*);;
 
 site
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[производство]
 	(* <- lang_ru;; *);
@@ -372,7 +372,7 @@ site
 	*);;
 
 area
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[производственный участок]
 	(* <- lang_ru;; *);
@@ -426,7 +426,7 @@ area
 	*);;
 
 equipment_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[связь оборудования]
 	(* <- lang_ru;; *);
@@ -458,7 +458,7 @@ equipment_relation
 	*);;
 
 nrel_contains
-<- sc_node_norole_relation;
+<- sc_node_non_role_relation;
 <- taxonomy_relation;
 => nrel_main_idtf:
 	[содержать*]
@@ -494,7 +494,7 @@ nrel_contains
 
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_contains;;
 	<- arity;;
 *);;

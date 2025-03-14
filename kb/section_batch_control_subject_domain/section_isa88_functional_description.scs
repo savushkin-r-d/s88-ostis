@@ -1,5 +1,5 @@
 section_isa88_functional_description
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания]
 	(* <- lang_ru;; *);
@@ -24,7 +24,7 @@ section_isa88_exchange_information
 };;
 	
 section_isa88_functional_description_recipes
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания рецептов]
 	(* <- lang_ru;; *);
@@ -57,7 +57,7 @@ information_status;;
 
 
 recipe_component
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[компонент рецепта]
 	(* <- lang_ru;; *);
@@ -77,7 +77,7 @@ level_class_equivalence;
 re_use_recipe;;
 	
 recipe_building_block
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[строительный блок рецепта]
 	(* <- lang_ru;; *);
@@ -108,7 +108,7 @@ information_status;
 recipe_function;;
 
 usage_constraint
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[ограничение использования]
 	(* <- lang_ru;; *);
@@ -125,7 +125,7 @@ usage_constraint
 	(* <- lang_uk;; *);;
 
 re_use_recipe
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[повторное использование рецепта]
 	(* <- lang_ru;; *);
@@ -143,7 +143,7 @@ it.]
 	(* <- lang_uk;; *);;
 
 recipe_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор рецепта]
 	(* <- lang_ru;; *);
@@ -163,7 +163,7 @@ unique instance of a recipe.]
 	(* <- lang_uk;; *);;
 	
 recipe_version
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[версия рецепта]
 	(* <- lang_ru;; *);
@@ -183,7 +183,7 @@ unique instance of a recipe.]
 	(* <- lang_uk;; *);;
 	
 version_date
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата версии]
 	(* <- lang_ru;; *);
@@ -203,7 +203,7 @@ modified.]
 	(* <- lang_uk;; *);;
 	
 approval_date
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата утверждения]
 	(* <- lang_ru;; *);
@@ -220,7 +220,7 @@ approval_date
 	(* <- lang_uk;; *);;
 
 effective_date
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата вступления в силу]
 	(* <- lang_ru;; *);
@@ -237,14 +237,14 @@ effective_date
 	(* <- lang_uk;; *);;
 
 expiration_date
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дата окончания срока]
 	(* <- lang_ru;; *);
 	[expiration date]
 	(* <- lang_en;; *);
 	[дата закінчення терміну]
-	(* <- lang_uk;; *);<- sc_node_not_relation;
+	(* <- lang_uk;; *);<- sc_node_class;
 => nrel_main_idtf:
 	[объект мастер-рецепта]
 	(* <- lang_ru;; *);
@@ -272,7 +272,7 @@ scale_reference;
 	(* <- lang_uk;; *);;
 
 product_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[код товара]
 	(* <- lang_ru;; *);
@@ -290,7 +290,7 @@ this version of the recipe.]
 	(* <- lang_uk;; *);;
 
 recipe_author
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[автор рецепта]
 	(* <- lang_ru;; *);
@@ -307,7 +307,7 @@ recipe_author
 	(* <- lang_uk;; *);;
 	
 recipe_approval
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[утверждение рецепта]
 	(* <- lang_ru;; *);
@@ -324,7 +324,7 @@ recipe_approval
 	(* <- lang_uk;; *);;
 
 version_description
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[описание версии]
 	(* <- lang_ru;; *);
@@ -341,7 +341,7 @@ version_description
 	(* <- lang_uk;; *);;
 
 information_status
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информационный статус]
 	(* <- lang_ru;; *);
@@ -358,7 +358,7 @@ information_status
 	(* <- lang_uk;; *);;
 	
 scale_reference
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[эталонный масштаб]
 	(* <- lang_ru;; *);
@@ -375,7 +375,7 @@ scale_reference
 	(* <- lang_uk;; *);;
 	
 section_isa88_functional_description_recipes_entity
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания объекта рецептов]
 	(* <- lang_ru;; *);
@@ -394,7 +394,7 @@ master_recipe_entity;
 control_recipe_entity;;
 
 general_recipe_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[общий объект рецепта]
 	(* <- lang_ru;; *);
@@ -413,7 +413,7 @@ general_recipe_entity
 scale_reference;;
 
 site_recipe_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[объект рецепта сайта]
 	(* <- lang_ru;; *);
@@ -433,7 +433,7 @@ of a site recipe.]
 scale_reference;;
 
 master_recipe_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[объект мастер-рецепта]
 	(* <- lang_ru;; *);
@@ -455,7 +455,7 @@ scale_reference;
 process_cell_id;;
 
 control_recipe_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[контрольный объект рецепта]
 	(* <- lang_ru;; *);
@@ -476,7 +476,7 @@ batch_size;
 information_status;;
 
 process_cell_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор ячейки процесса]
 	(* <- lang_ru;; *);
@@ -493,7 +493,7 @@ process_cell_id
 	(* <- lang_uk;; *);;
 	
 batch_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор пакета]
 	(* <- lang_ru;; *);
@@ -510,7 +510,7 @@ batch_id
 	(* <- lang_uk;; *);;
 	
 batch_size
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[размер пакета]
 	(* <- lang_ru;; *);
@@ -527,7 +527,7 @@ batch_size
 	(* <- lang_uk;; *);;
 	
 section_isa88_functional_description_recipes_requirement
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания оборудования рецептов]
 	(* <- lang_ru;; *);
@@ -549,7 +549,7 @@ equipment_relation;
 equipment_class;;
 
 equipment_requirement
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[требования к оборудованию]
 	(* <- lang_ru;; *);
@@ -566,7 +566,7 @@ equipment_requirement
 	(* <- lang_uk;; *);;
 
 equipment_procedural_element
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_summary:
 	[Процедурный элемент, связанный с частью оборудования.]
 	(* <- lang_ru;; *);
@@ -587,7 +587,7 @@ mode;
 state;;
 
 equipment_procedural_element_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор процедурного элемента оборудования]
 	(* <- lang_ru;; *);
@@ -604,7 +604,7 @@ equipment_procedural_element_id
 	(* <- lang_uk;; *);;
 	
 equipment_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_summary:
 	[Коллекция оборудования и оборудования для физической обработки и управления.
 элемент управления, сгруппированный для выполнения определенной функции управления или набора
@@ -625,7 +625,7 @@ mode;
 state;;
 
 equipment_endtity_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор конечного устройства оборудования]
 	(* <- lang_ru;; *);
@@ -642,7 +642,7 @@ equipment_endtity_id
 	(* <- lang_uk;; *);;
 	
 equipment_level
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[уровень оборудования]
 	(* <- lang_ru;; *);
@@ -659,7 +659,7 @@ equipment_level
 	(* <- lang_uk;; *);;
 	
 equipment_property
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[имущество оборудования]
 	(* <- lang_ru;; *);
@@ -685,7 +685,7 @@ engineering_units;
 version_description;;
 
 property_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор объекта]
 	(* <- lang_ru;; *);
@@ -702,7 +702,7 @@ property_id
 	(* <- lang_uk;; *);;
 	
 value_range
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[диапазон значений]
 	(* <- lang_ru;; *);
@@ -719,7 +719,7 @@ value_range
 	(* <- lang_uk;; *);;
 	
 engineering_units
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[инженерные подразделения]
 	(* <- lang_ru;; *);
@@ -736,7 +736,7 @@ engineering_units
 	(* <- lang_uk;; *);;
 	
 equipment_property_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип имущества оборудования]
 	(* <- lang_ru;; *);
@@ -753,7 +753,7 @@ equipment_property_type
 	(* <- lang_uk;; *);;
 	
 equipment_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_summary:
 	[Представление связей между оборудованием, но также может использоваться для представления других видов отношений между оборудованием.]
 	(* <- lang_ru;; *);
@@ -765,7 +765,7 @@ equipment_relation
 relation_id;;
 
 relation_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип имущества оборудования]
 	(* <- lang_ru;; *);
@@ -782,7 +782,7 @@ relation_id
 	(* <- lang_uk;; *);;
 	
 equipment_class
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[класс оборудования]
 	(* <- lang_ru;; *);
@@ -802,7 +802,7 @@ equipment_class_id;
 equipment_level;;
 
 relation_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор отношения]
 	(* <- lang_ru;; *);
@@ -819,7 +819,7 @@ relation_id
 	(* <- lang_uk;; *);;
 	
 recipe_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[функция рецепта]
 	(* <- lang_ru;; *);
@@ -836,7 +836,7 @@ recipe_function
 	(* <- lang_uk;; *);;
 	
 equipment_class_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор класса оборудования]
 	(* <- lang_ru;; *);
@@ -853,7 +853,7 @@ equipment_class_id
 	(* <- lang_uk;; *);;
 	
 section_isa88_functional_description_batch_schedule
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания плана произодства партии]
 	(* <- lang_ru;; *);
@@ -870,7 +870,7 @@ schedule_relation;;
 
 
 batch_schedule_entry
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[запись пакетного расписания]
 	(* <- lang_ru;; *);
@@ -894,7 +894,7 @@ resource_usage;
 status;;
 
 id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор]
 	(* <- lang_ru;; *);
@@ -911,7 +911,7 @@ id
 	(* <- lang_uk;; *);;
 
 level
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[уровень]
 	(* <- lang_ru;; *);
@@ -928,10 +928,10 @@ level
 	(* <- lang_uk;; *);;
 
 batch_size
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 schedule
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[график]
 	(* <- lang_ru;; *);
@@ -948,7 +948,7 @@ schedule
 	(* <- lang_uk;; *);;
 
 resource_usage
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[использование ресурсов]
 	(* <- lang_ru;; *);
@@ -965,7 +965,7 @@ resource_usage
 	(* <- lang_uk;; *);;
 
 status
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[статус]
 	(* <- lang_ru;; *);
@@ -982,7 +982,7 @@ status
 	(* <- lang_uk;; *);;
 
 schedule_parameter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[параметр расписания]
 	(* <- lang_ru;; *);
@@ -1007,7 +1007,7 @@ scaled;
 usage;;
 
 parameter_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[идентификатор параметра]
 	(* <- lang_ru;; *);
@@ -1024,7 +1024,7 @@ parameter_id
 	(* <- lang_uk;; *);;
 
 parameter_type
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тип параметра]
 	(* <- lang_ru;; *);
@@ -1041,7 +1041,7 @@ parameter_type
 	(* <- lang_uk;; *);;
 
 description
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[описание]
 	(* <- lang_ru;; *);
@@ -1058,10 +1058,10 @@ description
 	(* <- lang_uk;; *);;
 
 engineering_units
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 value
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[значення]
 	(* <- lang_uk;; *);
@@ -1080,7 +1080,7 @@ value
 	(* <- lang_uk;; *);;
 
 scaled
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[масштабирование]
 	(* <- lang_ru;; *);
@@ -1097,7 +1097,7 @@ scaled
 	(* <- lang_uk;; *);;
 
 usage
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[использование]
 	(* <- lang_ru;; *);
@@ -1134,7 +1134,7 @@ schedule_relation
 execute_order;;
 
 execute_order
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[порядок выполнения]
 	(* <- lang_ru;; *);
@@ -1151,7 +1151,7 @@ execute_order
 	(* <- lang_uk;; *);;
 
 section_isa88_functional_description_production_information
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf:
 	[Раздел. Предметная область функционального описания информации о производстве]
 	(* <- lang_ru;; *);
@@ -1171,7 +1171,7 @@ executed_procedural_entity;
 batch_report;;
 
 production_information
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информация о производстве]
 	(* <- lang_ru;; *);
@@ -1189,7 +1189,7 @@ production_information
 
 
 batch_specific_information
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[информация о партии]
 	(* <- lang_ru;; *);
@@ -1214,28 +1214,28 @@ utc;
 user_id;;
 
 batch_id
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 entry_id
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 new_value
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 engineering_units
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 equipment_id
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 utc
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 user_id
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 batch_history
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [история партии]
     (* <- lang_ru;; *);
@@ -1254,7 +1254,7 @@ batch_history
 batch_id;;
 
 batch_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [идентификатор партии]
     (* <- lang_ru;; *);
@@ -1271,7 +1271,7 @@ batch_id
     (* <- lang_uk;; *);;
 
 common_information
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [общая информация]
     (* <- lang_ru;; *);
@@ -1295,7 +1295,7 @@ utc;
 user_id;;
 
 entry_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [идентификатор записи]
     (* <- lang_ru;; *);
@@ -1312,7 +1312,7 @@ entry_id
     (* <- lang_uk;; *);;
 
 new_value
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [новое значение]
     (* <- lang_ru;; *);
@@ -1329,7 +1329,7 @@ new_value
     (* <- lang_uk;; *);;
 
 engineering_units
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [инженерные единицы]
     (* <- lang_ru;; *);
@@ -1346,7 +1346,7 @@ engineering_units
     (* <- lang_uk;; *);;
 
 equipment_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [идентификатор оборудования]
     (* <- lang_ru;; *);
@@ -1363,7 +1363,7 @@ equipment_id
     (* <- lang_uk;; *);;
 
 utc
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [время и дата в utc]
     (* <- lang_ru;; *);
@@ -1380,7 +1380,7 @@ utc
     (* <- lang_uk;; *);;
 
 user_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [идентификатор пользователя]
     (* <- lang_ru;; *);
@@ -1397,7 +1397,7 @@ user_id
     (* <- lang_uk;; *);;
 
 executed_procedural_entity
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [выполненный процедурный объект]
     (* <- lang_ru;; *);
@@ -1417,7 +1417,7 @@ executed_procedural_entity_id;
 procedural_entity_counter;;
 
 executed_procedural_entity_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [идентификатор выполненной процедурной сущности]
     (* <- lang_ru;; *);
@@ -1434,7 +1434,7 @@ executed_procedural_entity_id
     (* <- lang_uk;; *);;
 
 procedural_entity_counter
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [счетчик процедурных сущностей]
     (* <- lang_ru;; *);
@@ -1451,7 +1451,7 @@ procedural_entity_counter
     (* <- lang_uk;; *);;
 
 batch_report
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [отчёт о партиях]
     (* <- lang_ru;; *);
@@ -1470,7 +1470,7 @@ batch_report
 report_id;;
 
 report_id
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
     [Идентификатор отчета]
     (* <- lang_ru;; *);

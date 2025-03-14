@@ -8,14 +8,14 @@ sd_of_pfc_rules
 	[Предметна область правил мови PFC]
 	(* <- lang_uk;; *);
 <- subject_domain;
-<- sc_node_struct;
+<- sc_node_structure;
 <- structure;
 -> rrel_maximum_studied_object_class: pfc_rule;
 -> rrel_explored_relation:
 	nrel_mapping;		//не описано
 	nrel_isomorphic;;	//не описано
 
-sc_node_not_relation -> pfc_rule;;
+sc_node_class -> pfc_rule;;
 pfc_rule
 => nrel_main_idtf:
 	[правило языка PFC]
@@ -48,9 +48,9 @@ pfc_rule
 		*);;
 	*);;
 
-sc_node_norole_relation -> nrel_mapping;;
+sc_node_non_role_relation -> nrel_mapping;;
 
-sc_node_norole_relation -> nrel_isomorphic;;
+sc_node_non_role_relation -> nrel_isomorphic;;
 
 
 

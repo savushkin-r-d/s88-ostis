@@ -1,5 +1,5 @@
 subject_domain_isa88_process
-<- sc_node_struct;
+<- sc_node_structure;
 => nrel_main_idtf: 
 	[Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
 	[Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
@@ -14,7 +14,7 @@ process_action;
 nrel_process_element_link;;
 
 process_element
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[элемент процесса]
 	(* <- lang_ru;; *);
@@ -47,7 +47,7 @@ process_element
 => nrel_inclusion: process_stage; process_operation; process_action;;
 
 process_stage
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[стадия процесса]
 	(* <- lang_ru;; *);
@@ -79,7 +79,7 @@ process_stage
 	*);;
 
 process_operation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 [операция процесса]
 (* <- lang_ru;; *);
@@ -111,7 +111,7 @@ process_operation
 *);;
 
 process_action
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[действие процесса]
 	(* <- lang_ru;; *);

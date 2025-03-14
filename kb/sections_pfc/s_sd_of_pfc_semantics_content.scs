@@ -8,7 +8,7 @@ sd_of_pfc_semantics
 	[Предметна область семантики мови PFC]
 	(* <- lang_uk;; *);
 <- subject_domain;
-<- sc_node_struct;
+<- sc_node_structure;
 <- structure;
 -> rrel_maximum_studied_object_class: pfc_element;
 -> rrel_not_maximum_studied_object_class:
@@ -69,7 +69,7 @@ sd_of_pfc_semantics
 	nrel_explicit_transition;
 	nrel_implisit_transition;;
 
-sc_node_not_relation -> pfc_element;;
+sc_node_class -> pfc_element;;
 pfc_element
 => nrel_main_idtf:
 	[элемент языка PFC]
@@ -103,7 +103,7 @@ pfc_element
 		*);;
 	*);;
 
-sc_node_not_relation -> allocation_element;;
+sc_node_class -> allocation_element;;
 allocation_element
 => nrel_main_idtf:
 	[элемент размещения ресурсов]
@@ -131,7 +131,7 @@ allocation_element
 		*);;
 	*);;
 
-sc_node_not_relation -> structural_element;;
+sc_node_class -> structural_element;;
 structural_element
 => nrel_main_idtf:
 	[структурный элемент]
@@ -164,7 +164,7 @@ structural_element
 		*);;
 	*);;
 
-sc_node_not_relation -> synchronization_element;;
+sc_node_class -> synchronization_element;;
 synchronization_element
 => nrel_main_idtf:
 	[элемент синхронизации]
@@ -194,7 +194,7 @@ synchronization_element
 		*);;
 	*);;
 
-sc_node_not_relation -> procedural_element;;
+sc_node_class -> procedural_element;;
 procedural_element
 => nrel_main_idtf:
 	[процедурный элемент]
@@ -227,7 +227,7 @@ procedural_element
 		*);;
 	*);;
 
-sc_node_not_relation -> phase;;
+sc_node_class -> phase;;
 phase
 => nrel_main_idtf:
 	[атомарный процедурный элемент]
@@ -264,7 +264,7 @@ phase
 		*);;
 	*);;
 
-sc_node_not_relation -> non_atomic_procedural_element;;
+sc_node_class -> non_atomic_procedural_element;;
 non_atomic_procedural_element
 => nrel_main_idtf:
 	[неатомарный процедурный элемент]
@@ -303,7 +303,7 @@ non_atomic_procedural_element
 		*);;
 	*);;
 
-sc_node_not_relation -> collapsed_procedural_element;;
+sc_node_class -> collapsed_procedural_element;;
 collapsed_procedural_element
 => nrel_main_idtf:
 	[свёрнутый процедурный элемент]
@@ -333,7 +333,7 @@ collapsed_procedural_element
 		*);;
 	*);;
 
-sc_node_not_relation -> expanded_procedural_element;;
+sc_node_class -> expanded_procedural_element;;
 expanded_procedural_element
 => nrel_main_idtf:
 	[развёрнутый процедурный элемент]
@@ -363,7 +363,7 @@ expanded_procedural_element
 		*);;
 	*);;
 
-sc_node_not_relation -> operation;;
+sc_node_class -> operation;;
 operation
 => nrel_main_idtf:
 	[операция]
@@ -393,7 +393,7 @@ operation
 		*);;
 	*);;
 
-sc_node_not_relation -> unit_procedure;;
+sc_node_class -> unit_procedure;;
 unit_procedure
 => nrel_main_idtf:
 	[процедура технологической установки]
@@ -423,7 +423,7 @@ unit_procedure
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_starting;;
+sc_node_class -> procedure_starting;;
 procedure_starting
 => nrel_main_idtf:
 	[начало выполнения процедуры]
@@ -453,7 +453,7 @@ procedure_starting
 		*);;
 	*);;
 
-sc_node_not_relation -> starting_of_sequence_execution_choice;;
+sc_node_class -> starting_of_sequence_execution_choice;;
 starting_of_sequence_execution_choice
 => nrel_main_idtf:
 	[начало выбора последовательности исполнения]
@@ -483,7 +483,7 @@ starting_of_sequence_execution_choice
 		*);;
 	*);;
 
-sc_node_not_relation -> starting_of_parallel_sequence_execution;;
+sc_node_class -> starting_of_parallel_sequence_execution;;
 starting_of_parallel_sequence_execution
 => nrel_main_idtf:
 	[начало параллельного исполнения последовательности]
@@ -514,7 +514,7 @@ starting_of_parallel_sequence_execution
 		*);;
 	*);;
 
-sc_node_not_relation -> procedure_finishing;;
+sc_node_class -> procedure_finishing;;
 procedure_finishing
 => nrel_main_idtf:
 	[конец выполнения процедуры]
@@ -544,7 +544,7 @@ procedure_finishing
 		*);;
 	*);;
 
-sc_node_not_relation -> finishing_of_sequence_execution_choice;;
+sc_node_class -> finishing_of_sequence_execution_choice;;
 finishing_of_sequence_execution_choice
 => nrel_main_idtf:
 	[конец выбора последовательности выполнения]
@@ -574,7 +574,7 @@ finishing_of_sequence_execution_choice
 		*);;
 	*);;
 
-sc_node_not_relation -> finishing_of_parallel_sequence_execution;;
+sc_node_class -> finishing_of_parallel_sequence_execution;;
 finishing_of_parallel_sequence_execution
 => nrel_main_idtf:
 	[конец параллельного исполнения последовательности]
@@ -604,7 +604,7 @@ finishing_of_parallel_sequence_execution
 		*);;
 	*);;
 
-sc_node_not_relation -> recipe_procedure;;
+sc_node_class -> recipe_procedure;;
 recipe_procedure
 => nrel_main_idtf:
 	[процедура]
@@ -636,7 +636,7 @@ recipe_procedure
 		*);;
 	*);;
 
-sc_node_norole_relation -> nrel_pfc_relation;;
+sc_node_non_role_relation -> nrel_pfc_relation;;
 nrel_pfc_relation
 => nrel_main_idtf:
 	[связь языка PFC*]
@@ -673,7 +673,7 @@ nrel_pfc_relation
 => nrel_definitional_domain: pfc_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_pfc_relation;;
 	<- arity;;
 *);;
@@ -682,7 +682,7 @@ reflexive_relation -|> nrel_pfc_relation;;
 transitive_relation -|> nrel_pfc_relation;;
 symmetric_relation -|> nrel_pfc_relation;;
 
-sc_node_norole_relation -> nrel_order_of_execution;;
+sc_node_non_role_relation -> nrel_order_of_execution;;
 nrel_order_of_execution
 => nrel_main_idtf:
 	[порядок выполнения*]
@@ -720,7 +720,7 @@ nrel_order_of_execution
 => nrel_definitional_domain: pfc_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_order_of_execution;;
 	<- arity;;
 *);;
@@ -729,7 +729,7 @@ reflexive_relation -|> nrel_order_of_execution;;
 transitive_relation -> nrel_order_of_execution;;
 symmetric_relation -|> nrel_order_of_execution;;
 
-sc_node_norole_relation -> nrel_synchronization_element_link;;
+sc_node_non_role_relation -> nrel_synchronization_element_link;;
 nrel_synchronization_element_link
 => nrel_main_idtf:
 	[ссылка на элемент синхронизации*]
@@ -766,7 +766,7 @@ nrel_synchronization_element_link
 => nrel_definitional_domain: synchronization_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_synchronization_element_link;;
 	<- arity;;
 *);;
@@ -775,7 +775,7 @@ reflexive_relation -|> nrel_synchronization_element_link;;
 transitive_relation -|> nrel_synchronization_element_link;;
 symmetric_relation -|> nrel_synchronization_element_link;;
 
-sc_node_norole_relation -> nrel_one_way_link;;
+sc_node_non_role_relation -> nrel_one_way_link;;
 nrel_one_way_link
 => nrel_main_idtf:
 	[односторонняя ссылка*]
@@ -808,7 +808,7 @@ nrel_one_way_link
 => nrel_definitional_domain: synchronization_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_one_way_link;;
 	<- arity;;
 *);;
@@ -817,7 +817,7 @@ reflexive_relation -|> nrel_one_way_link;;
 transitive_relation -|> nrel_one_way_link;;
 symmetric_relation -|> nrel_one_way_link;;
 
-sc_node_norole_relation -> nrel_two_way_link;;
+sc_node_non_role_relation -> nrel_two_way_link;;
 nrel_two_way_link
 => nrel_main_idtf:
 	[двусторонняя ссылка*]
@@ -851,7 +851,7 @@ nrel_two_way_link
 => nrel_definitional_domain: synchronization_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_two_way_link;;
 	<- arity;;
 *);;
@@ -860,7 +860,7 @@ reflexive_relation -|> nrel_two_way_link;;
 transitive_relation -> nrel_two_way_link;;
 symmetric_relation -> nrel_two_way_link;;
 
-sc_node_norole_relation -> nrel_transition_condition;;
+sc_node_non_role_relation -> nrel_transition_condition;;
 nrel_transition_condition
 => nrel_main_idtf:
 	[условие перехода*]
@@ -891,7 +891,7 @@ nrel_transition_condition
 	*);;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_transition_condition;;
 	<- arity;;
 *);;
@@ -900,7 +900,7 @@ reflexive_relation -|> nrel_transition_condition;;
 transitive_relation -|> nrel_transition_condition;;
 symmetric_relation -|> nrel_transition_condition;;
 
-sc_node_norole_relation -> nrel_explicit_transition;;
+sc_node_non_role_relation -> nrel_explicit_transition;;
 nrel_explicit_transition
 => nrel_main_idtf:
 	[явный переход*]
@@ -941,7 +941,7 @@ nrel_explicit_transition
 => nrel_definitional_domain: procedural_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_explicit_transition;;
 	<- arity;;
 *);;
@@ -950,7 +950,7 @@ reflexive_relation -|> nrel_explicit_transition;;
 transitive_relation -|> nrel_explicit_transition;;
 symmetric_relation -|> nrel_explicit_transition;;
 
-sc_node_norole_relation -> nrel_implisit_transition;;
+sc_node_non_role_relation -> nrel_implisit_transition;;
 nrel_implisit_transition
 => nrel_main_idtf:
 	[неявный переход*]
@@ -993,7 +993,7 @@ nrel_implisit_transition
 => nrel_definitional_domain: procedural_element;;
 2 <= nrel_measurement: ...
 (*
-	<- sc_node_not_relation;;
+	<- sc_node_class;;
 	-> nrel_implisit_transition;;
 	<- arity;;
 *);;
@@ -1002,7 +1002,7 @@ reflexive_relation -|> nrel_implisit_transition;;
 transitive_relation -|> nrel_implisit_transition;;
 symmetric_relation -|> nrel_implisit_transition;;
 
-sc_node_not_relation -> preparation_cottage_cheese_Khutorok;;
+sc_node_class -> preparation_cottage_cheese_Khutorok;;
 preparation_cottage_cheese_Khutorok
 => nrel_main_idtf:
 	[мастер-рецепт для приготовления творога Хуторок]
@@ -1012,7 +1012,7 @@ preparation_cottage_cheese_Khutorok
 	[майстер-рецепт для приготування сиру Хуторок]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> preparation_of_milk_mixture;;
+sc_node_class -> preparation_of_milk_mixture;;
 preparation_of_milk_mixture
 => nrel_main_idtf:
 	[приготовление молочной смеси]
@@ -1040,7 +1040,7 @@ preparation_of_milk_mixture
 		*);;
 	*);;
 
-sc_node_not_relation -> preparation_of_curd_mass;;
+sc_node_class -> preparation_of_curd_mass;;
 preparation_of_curd_mass
 => nrel_main_idtf:
 	[приготовление творожной массы]
@@ -1068,7 +1068,7 @@ preparation_of_curd_mass
 		*);;
 	*);;
 
-sc_node_not_relation -> forming_of_curd_mass;;
+sc_node_class -> forming_of_curd_mass;;
 forming_of_curd_mass
 => nrel_main_idtf:
 	[формовка творожной массы]
@@ -1096,7 +1096,7 @@ forming_of_curd_mass
 		*);;
 	*);;
 		
-sc_node_not_relation -> filling_the_curd_mass;;
+sc_node_class -> filling_the_curd_mass;;
 filling_the_curd_mass
 => nrel_main_idtf:
 	[фасовка творожной массы]
@@ -1124,7 +1124,7 @@ filling_the_curd_mass
 		*);;
 	*);;
 
-sc_node_not_relation -> recipe_procedure_preparation_curd_mass;;
+sc_node_class -> recipe_procedure_preparation_curd_mass;;
 recipe_procedure_preparation_curd_mass
 => nrel_main_idtf:
 	[рецептурная процедура для приготовления творожной массы]
@@ -1134,7 +1134,7 @@ recipe_procedure_preparation_curd_mass
 	[рецептурна процедура для приготування сирної маси]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> selection_of_equipment;;
+sc_node_class -> selection_of_equipment;;
 selection_of_equipment
 => nrel_main_idtf:
 	[выбор оборудования]
@@ -1162,7 +1162,7 @@ selection_of_equipment
 		*);;
 	*);;
 
-sc_node_not_relation -> supply_line;;
+sc_node_class -> supply_line;;
 supply_line
 => nrel_main_idtf:
 	[линия подачи]
@@ -1190,7 +1190,7 @@ supply_line
 		*);;
 	*);;
 
-sc_node_not_relation -> coagulator;;
+sc_node_class -> coagulator;;
 coagulator
 => nrel_main_idtf:
 	[коагулятор]
@@ -1200,7 +1200,7 @@ coagulator
 	[коагулятор]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> filling;;
+sc_node_class -> filling;;
 filling
 => nrel_main_idtf:
 	[наполнение]
@@ -1210,7 +1210,7 @@ filling
 	[наповнення]
 	(* <- lang_uk;; *);;
 		
-sc_node_not_relation -> cooking;;
+sc_node_class -> cooking;;
 cooking
 => nrel_main_idtf:
 	[приготовление]
@@ -1220,7 +1220,7 @@ cooking
 	[приготування]
 	(* <- lang_uk;; *);;
 		
-sc_node_not_relation -> delivery;;
+sc_node_class -> delivery;;
 delivery
 => nrel_main_idtf:
 	[выдача]
@@ -1230,7 +1230,7 @@ delivery
 	[видача]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> washing;;
+sc_node_class -> washing;;
 washing
 => nrel_main_idtf:
 	[мойка]
@@ -1240,7 +1240,7 @@ washing
 	[мийка]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> operational_procedure_serum_separation;;
+sc_node_class -> operational_procedure_serum_separation;;
 operational_procedure_serum_separation
 => nrel_main_idtf:
 	[операционная процедура для операции "Отделение сыворотки"]
@@ -1250,7 +1250,7 @@ operational_procedure_serum_separation
 	[операційна процедура для операції "Відділення сироватки"]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> operational_procedure_serum_pumping;;
+sc_node_class -> operational_procedure_serum_pumping;;
 operational_procedure_serum_pumping
 => nrel_main_idtf:
 	[операционная процедура для операции "Откачка сыворотки"]
@@ -1260,7 +1260,7 @@ operational_procedure_serum_pumping
 	[операційна процедура для операції "Відкачування сироватки"]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> operational_procedure;;
+sc_node_class -> operational_procedure;;
 operational_procedure
 => nrel_main_idtf:
 	[операционная процедура]
@@ -1270,7 +1270,7 @@ operational_procedure
 	[операційна процедура]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> heating;;
+sc_node_class -> heating;;
 heating
 => nrel_main_idtf:
 	[подогрев]
@@ -1280,7 +1280,7 @@ heating
 	[підігрівання]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> mixing;;
+sc_node_class -> mixing;;
 mixing
 => nrel_main_idtf:
 	[перемешивание]
@@ -1290,13 +1290,13 @@ mixing
 	[перемішування]
 	(* <- lang_uk;; *);;		
 
-sc_node_not_relation -> temperature;;
+sc_node_class -> temperature;;
 temperature
 => nrel_main_idtf:
 	[температура]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> direction;;
+sc_node_class -> direction;;
 direction
 => nrel_main_idtf:
 	[направление]
@@ -1306,7 +1306,7 @@ direction
 	[напрямок]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> time;;
+sc_node_class -> time;;
 time
 => nrel_main_idtf:
 	[время]
@@ -1316,7 +1316,7 @@ time
 	[час]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> required_temperature_check;;
+sc_node_class -> required_temperature_check;;
 required_temperature_check
 => nrel_main_idtf:
 	[проверка температуры]
@@ -1326,7 +1326,7 @@ required_temperature_check
 	[перевірка температури]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> unit_procedure_preparation_curd_mass;;
+sc_node_class -> unit_procedure_preparation_curd_mass;;
 unit_procedure_preparation_curd_mass
 => nrel_main_idtf:
 	[аппаратная процедура для приготовления творожной массы]
@@ -1336,7 +1336,7 @@ unit_procedure_preparation_curd_mass
 	[процедура технологічного вузла для приготування сирної маси]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> overtemperature_check;;
+sc_node_class -> overtemperature_check;;
 overtemperature_check
 => nrel_main_idtf:
 	[проверка на превышение температуры]
@@ -1346,7 +1346,7 @@ overtemperature_check
 	[перевірка на перевищення температури]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> leaven_introduction;;
+sc_node_class -> leaven_introduction;;
 leaven_introduction
 => nrel_main_idtf:
 	[внесение закваски]
@@ -1356,7 +1356,7 @@ leaven_introduction
 	[внесення закваски ]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> leavening;;
+sc_node_class -> leavening;;
 leavening
 => nrel_main_idtf:
 	[заквашивание]
@@ -1366,7 +1366,7 @@ leavening
 	[заквашування]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> cutting;;
+sc_node_class -> cutting;;
 cutting
 => nrel_main_idtf:
 	[разрезка]
@@ -1376,7 +1376,7 @@ cutting
 	[розрізання]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> decision_about_necessity_mixing;;
+sc_node_class -> decision_about_necessity_mixing;;
 decision_about_necessity_mixing
 => nrel_main_idtf:
 	[решение о необходимости вымешивать]
@@ -1386,7 +1386,7 @@ decision_about_necessity_mixing
 	[рішення про необхідність вимішувати]
 	(* <- lang_uk;; *);;
 
-sc_node_not_relation -> readiness_for_delivery;;
+sc_node_class -> readiness_for_delivery;;
 readiness_for_delivery
 => nrel_main_idtf:
 	[готов к выдаче]
